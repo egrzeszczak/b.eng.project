@@ -1,3 +1,3 @@
 ![](Resources/politechnika-lubelska.svg)
 
-### [Dokumentacja](PROJEKT.md)
+### [Dokumentacja](PROJEKT.pdf)
