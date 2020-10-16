@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Author="admin" CommentTableSortAscending="false" CommentTableSortColumn="Date Time" DocumentationType="html" ExportedFromDifferentName="false" ExporterVersion="16.1.1" Name="grawer" TextualAnalysisHighlightOptionCaseSensitive="false" UmlVersion="2.x" Xml_structure="simple">
+	<ProjectInfo>
+		<LogicalView/>
+		<ProjectOptions>
+			<DiagramOptions ActivityDiagramControlFlowDisplayOption="\u0000" ActivityDiagramShowActionCallBehaviorOption="\u0000" ActivityDiagramShowActivityEdgeWeight="true" ActivityDiagramShowObjectNodeType="true" ActivityDiagramShowPartitionHandle="\u0000" AddDataStoresExtEntitiesToDecomposedDFD="\u0002" AlignColumnProperties="true" AllowConfigShowInOutFlowButtonsInDataFlowDiagram="false" AutoGenerateRoleName="false" AutoSetAttributeType="true" AutoSetColumnType="true" AutoSyncRoleName="true" BpdAutoStretchPools="true" BpdConnectGatewayWithFlowObjectInDifferentPool="\u0000" BpdDefaultConnectionPointStyle="\u0001" BpdDefaultConnectorStyle="\u0005" BpdDhowIdOption="\u0000" BpdShowActivitiesTypeIcon="true" BusinessProcessDiagramDefaultLanguage="English" ClassVisibilityStyle="\u0001" ConnectorLabelOrientation="\u0000" CreateOneMessagePerDirection="true" DecisionMergeNodeConnectionPointStyle="\u0000" DefaultAssociationEndNavigable="\u0001" DefaultAssociationEndVisibility="\u0000" DefaultAssociationShowFromMultiplicity="true" DefaultAssociationShowFromRoleName="true" DefaultAssociationShowFromRoleVisibility="true" DefaultAssociationShowStereotypes="true" DefaultAssociationShowToMultiplicity="true" DefaultAssociationShowToRoleName="true" DefaultAssociationShowToRoleVisibility="true" DefaultAttributeMultiplicity="false" DefaultAttributeType="" DefaultAttributeVisibility="\u0001" DefaultClassAttributeMultiplicity="" DefaultClassAttributeMultiplicityOrdered="false" DefaultClassAttributeMultiplicityUnique="true" DefaultClassInterfaceBall="false" DefaultClassVisibility="\u0004" DefaultColumnType="integer(10)" DefaultConnectionPointStyle="\u0000" DefaultConnectorStyle="\u0001" DefaultDiagramBackground="rgb(255, 255, 255)" DefaultDisplayAsRobustnessAnalysisIcon="true" DefaultDisplayAsRobustnessAnalysisIconInSequenceDiagram="true" DefaultDisplayAsStereotypeIcon="false" DefaultFontColor="rgb(0, 0, 0)" DefaultGenDiagramTypeFromScenario="\u0000" DefaultHtmlDocFontColor="rgb(0, 0, 0)" DefaultLineJumps="\u0000" DefaultOperationVisibility="\u0004" DefaultParameterDirection="\u0002" DefaultShowAttributeInitialValue="true" DefaultShowAttributeOption="\u0001" DefaultShowClassMemberStereotype="true" DefaultShowDirection="false" DefaultShowMultiplicityConstraints="false" DefaultShowOperationOption="\u0001" DefaultShowOperationSignature="true" DefaultShowOrderedMultiplicityConstraint="true" DefaultShowOwnedAssociationEndAsAttribute="true" DefaultShowOwner="false" DefaultShowOwnerSkipModelInFullyQualifiedOwnerSignature="true" DefaultShowReceptionOption="\u0001" DefaultShowTemplateParameter="true" DefaultShowTypeOption="\u0001" DefaultShowUniqueMultiplicityConstraint="true" DefaultTypeOfSubProcess="\u0000" DefaultWrapClassMember="false" DrawTextAnnotationOpenRectangleFollowConnectorEnd="true" EnableMinimumSize="true" EntityColumnConstraintsPresentation="\u0002" ErdIndexNumOfDigits="-1" ErdIndexPattern="{table_name}" ErdIndexPatternSyncAutomatically="true" ErdManyToManyJoinTableDelimiter="_" EtlTableDiagramFontSize="14" ExpandedSubProcessDiagramContent="\u0001" ForeignKeyArrowHeadSize="\u0002" ForeignKeyConnectorEndPointAssociatedColumn="false" ForeignKeyNamePattern="{reference_table_name}{reference_column_name}" ForeignKeyNamePatternCaseHandling="0" ForeignKeyRelationshipPattern="{association_name}" FractionalMetrics="true" GeneralizationSetNotation="\u0001" GraphicAntiAliasing="true" GridDiagramFontSize="14" LineJumpSize="\u0000" ModelElementNameAlignment="\u0004" MultipleLineClassName="\u0001" PaintConnectorThroughLabel="false" PointConnectorEndToCompartmentMember="true" PrimaryKeyConstraintPattern="" PrimaryKeyNamePattern="ID" RenameConstructorAfterRenameClass="\u0000" RenameExtensionPointToFollowExtendUseCase="\u0000" ShapeAutoFitSize="false" ShowActivationsInSequenceDiagram="true" ShowActivityStateNodeCaption="524287" ShowArtifactOption="\u0002" ShowAssociatedDiagramNameOfInteraction="false" ShowAssociationRoleStereotypes="true" ShowAttributeGetterSetter="false" ShowBSElementCode="true" ShowClassEmptyCompartments="false" ShowColumnNullable="true" ShowColumnType="true" ShowColumnUniqueConstraintName="false" ShowColumnUserType="false" ShowComponentOption="\u0002" ShowExtraColumnProperties="true" ShowInOutFlowButtonsInDataFlowDiagram="false" ShowInOutFlowsInSubLevelDiagram="true" ShowMessageOperationSignatureForSequenceAndCommunicationDiagram="true" ShowMessageStereotypeInSequenceAndCommunicationDiagram="true" ShowNumberInCollaborationDiagram="true" ShowNumberInSequenceDiagram="true" ShowPackageNameStyle="\u0000" ShowParameterNameInOperationSignature="true" ShowRowGridLineWithinCompClassDiagram="false" ShowRowGridLineWithinCompERD="true" ShowRowGridLineWithinORMDiagram="true" ShowSchemaNameInERD="true" ShowTransitionTrigger="\u0000" ShowUseCaseExtensionPoint="true" ShowUseCaseID="false" SnapConnectorsAfterZoom="false" StateShowParametersOfInternalActivities="false" StateShowPrePostConditionAndBodyOfInternalActivities="true" StopTargetLifelineOnCreateDestroyMessage="\u0002" SupportHtmlTaggedValue="false" SupportMultipleLineAttribute="true" SuppressImpliedMultiplicityForAttributeAssociationEnd="false" SyncAssociationNameWithAssociationClass="\u0000" SyncAssociationRoleNameWithReferencedAttributeName="true" SyncDocOfInterfaceToSubClass="\u0000" TextAntiAliasing="true" TextualAnalysisGenerateRequirementTextOption="\u0001" TextualAnalysisHighlightOption="\u0000" UnnamedIndexPattern="{table_name}_{column_name}" UseStateNameTab="false" WireflowDiagramDevice="0" WireflowDiagramShowActiveFlowLabel="true" WireflowDiagramTheme="0" WireflowDiagramWireflowShowPreview="true" WireflowDiagramWireflowShowScreenId="true">
+				<DefaultHtmlDocFont Family="Dialog" Size="12" Style="0"/>
+			</DiagramOptions>
+			<GeneralOptions ConfirmSubLevelIdWithDot="true" QuickAddGlossaryTermParentModelId="default"/>
+			<InstantReverseOptions CalculateGeneralizationAndRealization="false" CreateShapeForParentModelOfDraggedClassPackage="false" ReverseGetterSetter="\u0000" ReverseOperationImplementation="false" ShowPackageForNewDiagram="\u0001" ShowPackageOwner="\u0000"/>
+			<ModelQualityOptions EnableModelQualityChecking="false"/>
+			<ORMOptions DecimalPrecision="19" DecimalScale="0" ExportCommentToDatabase="true" FormattedSQL="false" GenerateAssociationWithAttribute="false" GenerateDiagramFromORMWizards="true" GetterSetterVisibility="\u0000" IdGeneratorType="native" MappingFileColumnOrder="\u0000" NumericToClassType="\u0000" QuoteSQLIdentifier="\u0000" RecreateShapeWhenSync="false" SyncToClassDiagramAttributeName="\u0001" SyncToClassDiagramAttributeNamePrefix="" SyncToClassDiagramAttributeNameSuffix="" SyncToClassDiagramClassName="\u0000" SyncToClassDiagramClassNamePrefix="" SyncToClassDiagramClassNameSuffix="" SyncToERDColumnName="\u0000" SyncToERDColumnNamePrefix="" SyncToERDColumnNameSuffix="" SyncToERDTableName="\u0004" SyncToERDTableNamePrefix="" SyncToERDTableNameSuffix="" SynchronizeDefaultValueToColumn="false" SynchronizeName="\u0002" TablePerSubclassFKMapping="\u0000" UpperCaseSQL="true" UseDefaultDecimal="true" WrappingServletRequest="\u0001"/>
+			<RequirementDiagramOptions DefaultWrapMember="true" ShowAttributes="\u0001" SupportHTMLAttribute="false"/>
+			<StateCodeEngineOptions AutoCreateInitialStateInStateDiagram="true" AutoCreateTransitionMethods="true" DefaultInitialStateLocationX="-1" DefaultInitialStateLocationY="-1" GenerateDebugMessage="false" GenerateSample="true" GenerateTryCatch="true" Language="\u0000" RegenerateTransitionMethods="false" SyncTransitionMethods="true"/>
+			<WarningOptions CreateORMClassInDefaultPackage="true"/>
+			<PORepository>
+				<POUserIDFormats>
+					<POUserIDFormat Digits="2" Guid="false" Id="uMmmEI6GAqAQcAV." LastNumericValue="0" ModelType="BPMNElement" Prefix="BP" Suffix=""/>
+					<POUserIDFormat Digits="2" Guid="false" Id="uMmmEI6GAqAQcAV_" LastNumericValue="2" ModelType="Actor" Prefix="AC" Suffix=""/>
+					<POUserIDFormat Digits="2" Guid="false" Id="uMmmEI6GAqAQcAWA" LastNumericValue="15" ModelType="UseCase" Prefix="UC" Suffix=""/>
+					<POUserIDFormat Digits="3" Guid="false" Id="uMmmEI6GAqAQcAWB" LastNumericValue="0" ModelType="Requirement" Prefix="REQ" Suffix=""/>
+					<POUserIDFormat Digits="3" Guid="false" Id="uMmmEI6GAqAQcAWC" LastNumericValue="0" ModelType="BusinessRule" Prefix="BR" Suffix=""/>
+					<POUserIDFormat Digits="-1" Guid="false" Id="uMmmEI6GAqAQcAWD" LastNumericValue="0" ModelType="BusinessProcessDiagram" Prefix="" Suffix=""/>
+				</POUserIDFormats>
+			</PORepository>
+		</ProjectOptions>
+	</ProjectInfo>
+	<Models>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="0nGmEI6GAqAQcABQ" Name="boolean" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.515" PmLastModified="2020-03-23T18:17:02.780" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="WnGmEI6GAqAQcABR" Name="byte" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.530" PmLastModified="2020-03-23T18:17:02.812" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="WnGmEI6GAqAQcABS" Name="char" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.530" PmLastModified="2020-03-23T18:17:02.812" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="WnGmEI6GAqAQcABT" Name="double" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.530" PmLastModified="2020-03-23T18:17:02.812" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="WnGmEI6GAqAQcABU" Name="float" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.530" PmLastModified="2020-03-23T18:17:02.812" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="WnGmEI6GAqAQcABV" Name="int" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.530" PmLastModified="2020-03-23T18:17:02.812" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="WnGmEI6GAqAQcABW" Name="long" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.530" PmLastModified="2020-03-23T18:17:02.812" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="WnGmEI6GAqAQcABX" Name="short" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.530" PmLastModified="2020-03-23T18:17:02.812" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="VnGmEI6GAqAQcABY" Name="void" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.546" PmLastModified="2020-03-23T18:17:02.749" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="VnGmEI6GAqAQcABZ" Name="string" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.546" PmLastModified="2020-03-23T18:17:02.749" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<Stereotype Abstract="false" BacklogActivityId="0" BaseType="UseCase" Documentation_plain="" IconPath_IsNull="true" Id="KvGmEI6GAqAQcAQe" Leaf="false" Name="UseCase" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.827" PmLastModified="2020-03-23T18:17:02.796" QualityReason_IsNull="true" QualityScore="-1" Root="false" UserIDLastNumericValue="0" UserID_IsNull="true">
+			<TaggedValueDefinitions>
+				<TaggedValueDefinitionContainer Id="JvGmEI6GAqAQcAQf" Name="">
+					<ModelChildren>
+						<TaggedValueDefinition BacklogActivityId="0" DefaultHTMLValue="" DefaultValue="" Documentation_plain="" Id="wfGmEI6GAqAQcAQg" Name="Level" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.827" PmLastModified="2020-03-23T18:17:02.796" QualityReason_IsNull="true" QualityScore="-1" TagDefStereotype="KvGmEI6GAqAQcAQe" Type="Enumeration" UserIDLastNumericValue="0" UserID_IsNull="true">
+							<EnumerationValues>
+								<Value Value="Summary"/>
+								<Value Value="User"/>
+								<Value Value="Subfunction"/>
+							</EnumerationValues>
+						</TaggedValueDefinition>
+						<TaggedValueDefinition BacklogActivityId="0" DefaultHTMLValue="" DefaultValue="" Documentation_plain="" Id="wfGmEI6GAqAQcAQh" Name="Complexity" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.827" PmLastModified="2020-03-23T18:17:02.796" QualityReason_IsNull="true" QualityScore="-1" TagDefStereotype="KvGmEI6GAqAQcAQe" Type="Enumeration" UserIDLastNumericValue="0" UserID_IsNull="true">
+							<EnumerationValues>
+								<Value Value="Low"/>
+								<Value Value="Medium"/>
+								<Value Value="High"/>
+							</EnumerationValues>
+						</TaggedValueDefinition>
+						<TaggedValueDefinition BacklogActivityId="0" DefaultHTMLValue="" DefaultValue="" Documentation_plain="" Id="wfGmEI6GAqAQcAQi" Name="Use Case Status" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.827" PmLastModified="2020-03-23T18:17:02.796" QualityReason_IsNull="true" QualityScore="-1" TagDefStereotype="KvGmEI6GAqAQcAQe" Type="Enumeration" UserIDLastNumericValue="0" UserID_IsNull="true">
+							<EnumerationValues>
+								<Value Value="Name Only"/>
+								<Value Value="Initial"/>
+								<Value Value="Base"/>
+								<Value Value="Complete"/>
+								<Value Value="Deferred"/>
+							</EnumerationValues>
+						</TaggedValueDefinition>
+						<TaggedValueDefinition BacklogActivityId="0" DefaultHTMLValue="" DefaultValue="" Documentation_plain="" Id="wfGmEI6GAqAQcAQj" Name="Implementation Status" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.827" PmLastModified="2020-03-23T18:17:02.796" QualityReason_IsNull="true" QualityScore="-1" TagDefStereotype="KvGmEI6GAqAQcAQe" Type="Enumeration" UserIDLastNumericValue="0" UserID_IsNull="true">
+							<EnumerationValues>
+								<Value Value="Scheduled"/>
+								<Value Value="Started"/>
+								<Value Value="Partially Complete"/>
+								<Value Value="Complete"/>
+								<Value Value="Partially Deferred"/>
+							</EnumerationValues>
+						</TaggedValueDefinition>
+						<TaggedValueDefinition BacklogActivityId="0" DefaultHTMLValue="" DefaultValue="" Documentation_plain="" Id="wfGmEI6GAqAQcAQk" Name="Preconditions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.827" PmLastModified="2020-03-23T18:17:02.796" QualityReason_IsNull="true" QualityScore="-1" TagDefStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+						<TaggedValueDefinition BacklogActivityId="0" DefaultHTMLValue="" DefaultValue="" Documentation_plain="" Id="wfGmEI6GAqAQcAQl" Name="Post-conditions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.827" PmLastModified="2020-03-23T18:17:02.796" QualityReason_IsNull="true" QualityScore="-1" TagDefStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+						<TaggedValueDefinition BacklogActivityId="0" DefaultHTMLValue="" DefaultValue="" Documentation_plain="" Id="wfGmEI6GAqAQcAQm" Name="Author" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.827" PmLastModified="2020-03-23T18:17:02.796" QualityReason_IsNull="true" QualityScore="-1" TagDefStereotype="KvGmEI6GAqAQcAQe" Type="Text" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+						<TaggedValueDefinition BacklogActivityId="0" DefaultHTMLValue="" DefaultValue="" Documentation_plain="" Id="wfGmEI6GAqAQcAQn" Name="Assumptions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:16:45.827" PmLastModified="2020-03-23T18:17:02.796" QualityReason_IsNull="true" QualityScore="-1" TagDefStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+					</ModelChildren>
+				</TaggedValueDefinitionContainer>
+			</TaggedValueDefinitions>
+		</Stereotype>
+		<Actor Abstract="false" BacklogActivityId="0" BusinessModel="false" Complexity_IsNull="true" Documentation_plain="" FontSize="0" Goals_IsNull="true" Id="39YWEI6GAqAQcAWX" Leaf="false" Name="Użytkownik" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:19:53.339" PmLastModified="2020-03-30T12:21:34.853" QualityReason_IsNull="true" QualityScore="-1" Root="false" UserID="AC01" UserIDLastNumericValue="0" Visibility="public">
+			<MasterView>
+				<Actor Idref="79YWEI6GAqAQcAWW" Name="Użytkownik"/>
+			</MasterView>
+		</Actor>
+		<System Abstract="false" BacklogActivityId="0" Documentation_plain="" Id="ZzZWEI6GAqAQcAWe" Leaf="false" Name="System" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:22:04.646" PmLastModified="2020-03-30T12:21:34.853" QualityReason_IsNull="true" QualityScore="-1" Root="false" UserIDLastNumericValue="0" UserID_IsNull="true">
+			<MasterView>
+				<System Idref="pzZWEI6GAqAQcAWd" Name="System"/>
+			</MasterView>
+			<ModelChildren>
+				<UseCase Abstract="false" BacklogActivityId="0" BusinessModel="false" ContextName_IsNull="true" DescNameColumnWidth="0" DescValueColumnWidth="0" Documentation_plain="" Id="_gLWEI6GAqAQcAWq" Justification="" Leaf="false" Name="Wczytywanie obrazu rastrowego" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:22:58.815" PmLastModified="2020-03-30T11:14:42.125" PostConditions_IsNull="true" PreConditions_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" Root="false" ScheduleRowHeight="24" Status="Identify" TaskPoolId="0" TaskPoolName_IsNull="true" TemplateName_IsNull="true" TestingConfig_IsNull="true" TestingSetup_IsNull="true" UcRank="Unspecified" UseCaseDescriptionDiagramId_IsNull="true" UserID="UC01" UserIDLastNumericValue="0">
+					<Stereotypes>
+						<Stereotype Idref="KvGmEI6GAqAQcAQe" Name="UseCase"/>
+					</Stereotypes>
+					<TaggedValues>
+						<TaggedValueContainer CustomizedOrdering="false" Id="QQLWEI6GAqAQcAWs" Name="" SubLevelTaggedValueCustomizedOrdering="false">
+							<ModelChildren>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="IQLWEI6GAqAQcAWu" Multiplicity="Unspecified" Name="Level" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:22:58.820" PmLastModified="2020-03-23T18:23:40.337" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQg" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="YQLWEI6GAqAQcAWv" Multiplicity="Unspecified" Name="Complexity" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:22:58.822" PmLastModified="2020-03-23T18:23:40.337" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQh" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="4QLWEI6GAqAQcAWw" Multiplicity="Unspecified" Name="Use Case Status" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:22:58.823" PmLastModified="2020-03-23T18:23:40.337" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQi" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="4QLWEI6GAqAQcAWx" Multiplicity="Unspecified" Name="Implementation Status" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:22:58.823" PmLastModified="2020-03-23T18:23:40.337" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQj" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="EQLWEI6GAqAQcAWy" Multiplicity="Unspecified" Name="Preconditions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:22:58.824" PmLastModified="2020-03-23T18:23:40.337" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQk" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="kQLWEI6GAqAQcAWz" Multiplicity="Unspecified" Name="Post-conditions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:22:58.825" PmLastModified="2020-03-23T18:23:40.337" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQl" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="kQLWEI6GAqAQcAW0" Multiplicity="Unspecified" Name="Author" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:22:58.825" PmLastModified="2020-03-23T18:23:40.338" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQm" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="UQLWEI6GAqAQcAW1" Multiplicity="Unspecified" Name="Assumptions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:22:58.826" PmLastModified="2020-03-23T18:23:40.338" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQn" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+							</ModelChildren>
+						</TaggedValueContainer>
+					</TaggedValues>
+					<PrimaryActors>
+						<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+					</PrimaryActors>
+					<MasterView>
+						<UseCase Idref="PgLWEI6GAqAQcAWp" Name="Wczytywanie obrazu rastrowego"/>
+					</MasterView>
+				</UseCase>
+				<UseCase Abstract="false" BacklogActivityId="0" BusinessModel="false" ContextName_IsNull="true" DescNameColumnWidth="0" DescValueColumnWidth="0" Documentation_plain="" Id="mfE2EI6GAqAQcAXq" Justification="" Leaf="false" Name="Wybór gotowego pliku do wygrawerowania" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:24:24.601" PmLastModified="2020-03-23T18:25:15.604" PostConditions_IsNull="true" PreConditions_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" Root="false" ScheduleRowHeight="24" Status="Identify" TaskPoolId="0" TaskPoolName_IsNull="true" TemplateName_IsNull="true" TestingConfig_IsNull="true" TestingSetup_IsNull="true" UcRank="Unspecified" UseCaseDescriptionDiagramId_IsNull="true" UserID="UC03" UserIDLastNumericValue="0">
+					<Stereotypes>
+						<Stereotype Idref="KvGmEI6GAqAQcAQe" Name="UseCase"/>
+					</Stereotypes>
+					<TaggedValues>
+						<TaggedValueContainer CustomizedOrdering="false" Id="WfE2EI6GAqAQcAXr" Name="" SubLevelTaggedValueCustomizedOrdering="false">
+							<ModelChildren>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="WfE2EI6GAqAQcAXs" Multiplicity="Unspecified" Name="Level" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:24:24.602" PmLastModified="2020-03-23T18:24:34.778" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQg" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="2fE2EI6GAqAQcAXt" Multiplicity="Unspecified" Name="Complexity" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:24:24.603" PmLastModified="2020-03-23T18:24:34.779" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQh" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="OfE2EI6GAqAQcAXu" Multiplicity="Unspecified" Name="Use Case Status" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:24:24.604" PmLastModified="2020-03-23T18:24:34.779" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQi" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="OfE2EI6GAqAQcAXv" Multiplicity="Unspecified" Name="Implementation Status" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:24:24.604" PmLastModified="2020-03-23T18:24:34.779" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQj" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="ufE2EI6GAqAQcAXw" Multiplicity="Unspecified" Name="Preconditions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:24:24.605" PmLastModified="2020-03-23T18:24:34.779" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQk" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="efE2EI6GAqAQcAXx" Multiplicity="Unspecified" Name="Post-conditions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:24:24.606" PmLastModified="2020-03-23T18:24:34.780" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQl" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="efE2EI6GAqAQcAXy" Multiplicity="Unspecified" Name="Author" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:24:24.606" PmLastModified="2020-03-23T18:24:34.780" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQm" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id=".fE2EI6GAqAQcAXz" Multiplicity="Unspecified" Name="Assumptions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:24:24.607" PmLastModified="2020-03-23T18:24:34.780" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQn" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+							</ModelChildren>
+						</TaggedValueContainer>
+					</TaggedValues>
+					<PrimaryActors>
+						<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+					</PrimaryActors>
+					<MasterView>
+						<UseCase Idref="GfE2EI6GAqAQcAXp" Name="Wybór gotowego pliku do wygrawerowania"/>
+					</MasterView>
+				</UseCase>
+				<UseCase Abstract="false" BacklogActivityId="0" BusinessModel="false" ContextName_IsNull="true" DescNameColumnWidth="0" DescValueColumnWidth="0" Documentation_plain="" Id="Eym2EI6GAqAQcAYe" Justification="" Leaf="false" Name="Ustawienia grawerowania" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:31.464" PmLastModified="2020-03-23T18:26:42.369" PostConditions_IsNull="true" PreConditions_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" Root="false" ScheduleRowHeight="24" Status="Identify" TaskPoolId="0" TaskPoolName_IsNull="true" TemplateName_IsNull="true" TestingConfig_IsNull="true" TestingSetup_IsNull="true" UcRank="Unspecified" UseCaseDescriptionDiagramId_IsNull="true" UserID="UC04" UserIDLastNumericValue="0">
+					<Stereotypes>
+						<Stereotype Idref="KvGmEI6GAqAQcAQe" Name="UseCase"/>
+					</Stereotypes>
+					<TaggedValues>
+						<TaggedValueContainer CustomizedOrdering="false" Id="kym2EI6GAqAQcAYf" Name="" SubLevelTaggedValueCustomizedOrdering="false">
+							<ModelChildren>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="kym2EI6GAqAQcAYg" Multiplicity="Unspecified" Name="Level" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:31.465" PmLastModified="2020-03-23T18:25:41.615" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQg" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="Uym2EI6GAqAQcAYh" Multiplicity="Unspecified" Name="Complexity" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:31.466" PmLastModified="2020-03-23T18:25:41.615" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQh" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="Uym2EI6GAqAQcAYi" Multiplicity="Unspecified" Name="Use Case Status" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:31.466" PmLastModified="2020-03-23T18:25:41.615" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQi" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="0ym2EI6GAqAQcAYj" Multiplicity="Unspecified" Name="Implementation Status" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:31.467" PmLastModified="2020-03-23T18:25:41.615" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQj" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="Mym2EI6GAqAQcAYk" Multiplicity="Unspecified" Name="Preconditions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:31.468" PmLastModified="2020-03-23T18:25:41.615" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQk" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="Mym2EI6GAqAQcAYl" Multiplicity="Unspecified" Name="Post-conditions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:31.468" PmLastModified="2020-03-23T18:25:41.615" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQl" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="sym2EI6GAqAQcAYm" Multiplicity="Unspecified" Name="Author" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:31.469" PmLastModified="2020-03-23T18:25:41.615" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQm" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="sym2EI6GAqAQcAYn" Multiplicity="Unspecified" Name="Assumptions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:31.469" PmLastModified="2020-03-23T18:25:41.615" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQn" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+							</ModelChildren>
+						</TaggedValueContainer>
+					</TaggedValues>
+					<PrimaryActors>
+						<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+					</PrimaryActors>
+					<MasterView>
+						<UseCase Idref="Eym2EI6GAqAQcAYd" Name="Ustawienia grawerowania"/>
+					</MasterView>
+				</UseCase>
+				<UseCase Abstract="false" BacklogActivityId="0" BusinessModel="false" ContextName_IsNull="true" DescNameColumnWidth="0" DescValueColumnWidth="0" Documentation_plain="" Id="_jL2EI6GAqAQcAZ6" Justification="" Leaf="false" Name="Rozpoczęcie grawerowania" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:27:24.031" PmLastModified="2020-03-23T18:28:25.995" PostConditions_IsNull="true" PreConditions_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" Root="false" ScheduleRowHeight="24" Status="Identify" TaskPoolId="0" TaskPoolName_IsNull="true" TemplateName_IsNull="true" TestingConfig_IsNull="true" TestingSetup_IsNull="true" UcRank="Unspecified" UseCaseDescriptionDiagramId_IsNull="true" UserID="UC05" UserIDLastNumericValue="0">
+					<Stereotypes>
+						<Stereotype Idref="KvGmEI6GAqAQcAQe" Name="UseCase"/>
+					</Stereotypes>
+					<TaggedValues>
+						<TaggedValueContainer CustomizedOrdering="false" Id="gTL2EI6GAqAQcAZ7" Name="" SubLevelTaggedValueCustomizedOrdering="false">
+							<ModelChildren>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="gTL2EI6GAqAQcAZ8" Multiplicity="Unspecified" Name="Level" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:27:24.033" PmLastModified="2020-03-23T18:27:44.377" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQg" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="gTL2EI6GAqAQcAZ9" Multiplicity="Unspecified" Name="Complexity" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:27:24.033" PmLastModified="2020-03-23T18:27:44.377" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQh" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="QTL2EI6GAqAQcAZ." Multiplicity="Unspecified" Name="Use Case Status" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:27:24.034" PmLastModified="2020-03-23T18:27:44.377" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQi" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="QTL2EI6GAqAQcAZ_" Multiplicity="Unspecified" Name="Implementation Status" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:27:24.034" PmLastModified="2020-03-23T18:27:44.377" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQj" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="wTL2EI6GAqAQcAaA" Multiplicity="Unspecified" Name="Preconditions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:27:24.035" PmLastModified="2020-03-23T18:27:44.377" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQk" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="ITL2EI6GAqAQcAaB" Multiplicity="Unspecified" Name="Post-conditions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:27:24.036" PmLastModified="2020-03-23T18:27:44.377" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQl" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="ITL2EI6GAqAQcAaC" Multiplicity="Unspecified" Name="Author" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:27:24.036" PmLastModified="2020-03-23T18:27:44.377" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQm" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="oTL2EI6GAqAQcAaD" Multiplicity="Unspecified" Name="Assumptions" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:27:24.037" PmLastModified="2020-03-23T18:27:44.377" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQn" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+							</ModelChildren>
+						</TaggedValueContainer>
+					</TaggedValues>
+					<PrimaryActors>
+						<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+					</PrimaryActors>
+					<MasterView>
+						<UseCase Idref="_jL2EI6GAqAQcAZ5" Name="Rozpoczęcie grawerowania"/>
+					</MasterView>
+				</UseCase>
+				<UseCase Abstract="false" BacklogActivityId="0" BusinessModel="false" ContextName_IsNull="true" DescNameColumnWidth="0" DescValueColumnWidth="0" Documentation_plain="" Id="Zz0u5I6GAqAQcAgC" Justification="" Leaf="false" Name="Uruchomienie testu lasera" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:34.182" PmLastModified="2020-03-29T20:01:49.970" PostConditions_IsNull="true" PreConditions_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" Root="false" ScheduleRowHeight="24" Status="Identify" TaskPoolId="0" TaskPoolName_IsNull="true" TemplateName_IsNull="true" TestingConfig_IsNull="true" TestingSetup_IsNull="true" UcRank="Unspecified" UseCaseDescriptionDiagramId_IsNull="true" UserID="UC10" UserIDLastNumericValue="0">
+					<Stereotypes>
+						<Stereotype Idref="KvGmEI6GAqAQcAQe" Name="UseCase"/>
+					</Stereotypes>
+					<TaggedValues>
+						<TaggedValueContainer CustomizedOrdering="false" Id="5z0u5I6GAqAQcAgD" Name="" SubLevelTaggedValueCustomizedOrdering="false">
+							<ModelChildren>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="5z0u5I6GAqAQcAgE" Multiplicity="Unspecified" Name="Level" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:34.183" PmLastModified="2020-03-29T20:01:49.971" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQg" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="5z0u5I6GAqAQcAgF" Multiplicity="Unspecified" Name="Complexity" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:34.183" PmLastModified="2020-03-29T20:01:49.971" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQh" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="Fz0u5I6GAqAQcAgG" Multiplicity="Unspecified" Name="Use Case Status" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:34.184" PmLastModified="2020-03-29T20:01:49.971" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQi" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="Fz0u5I6GAqAQcAgH" Multiplicity="Unspecified" Name="Implementation Status" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:34.184" PmLastModified="2020-03-29T20:01:49.971" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQj" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="Fz0u5I6GAqAQcAgI" Multiplicity="Unspecified" Name="Preconditions" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:34.184" PmLastModified="2020-03-29T20:01:49.971" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQk" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="lz0u5I6GAqAQcAgJ" Multiplicity="Unspecified" Name="Post-conditions" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:34.185" PmLastModified="2020-03-29T20:01:49.971" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQl" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="lz0u5I6GAqAQcAgK" Multiplicity="Unspecified" Name="Author" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:34.185" PmLastModified="2020-03-29T20:01:49.971" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQm" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="lz0u5I6GAqAQcAgL" Multiplicity="Unspecified" Name="Assumptions" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:34.185" PmLastModified="2020-03-29T20:01:49.971" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQn" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+							</ModelChildren>
+						</TaggedValueContainer>
+					</TaggedValues>
+					<PrimaryActors>
+						<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+					</PrimaryActors>
+					<MasterView>
+						<UseCase Idref="Zz0u5I6GAqAQcAgB" Name="Uruchomienie testu lasera"/>
+					</MasterView>
+				</UseCase>
+				<UseCase Abstract="false" BacklogActivityId="0" BusinessModel="false" ContextName_IsNull="true" DescNameColumnWidth="0" DescValueColumnWidth="0" Documentation_plain="" Id="aJCtVI6GAqAQcAfn" Justification="" Leaf="false" Name="Odbieranie instrukcji" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:10:39.638" PmLastModified="2020-03-30T11:11:13.911" PostConditions_IsNull="true" PreConditions_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" Root="false" ScheduleRowHeight="24" Status="Identify" TaskPoolId="0" TaskPoolName_IsNull="true" TemplateName_IsNull="true" TestingConfig_IsNull="true" TestingSetup_IsNull="true" UcRank="Unspecified" UseCaseDescriptionDiagramId_IsNull="true" UserID="UC11" UserIDLastNumericValue="0">
+					<Stereotypes>
+						<Stereotype Idref="KvGmEI6GAqAQcAQe" Name="UseCase"/>
+					</Stereotypes>
+					<TaggedValues>
+						<TaggedValueContainer CustomizedOrdering="false" Id="WJCtVI6GAqAQcAfv" Name="" SubLevelTaggedValueCustomizedOrdering="false">
+							<ModelChildren>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="2JCtVI6GAqAQcAfw" Multiplicity="Unspecified" Name="Level" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:10:39.643" PmLastModified="2020-03-30T11:11:13.911" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQg" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="eJCtVI6GAqAQcAfx" Multiplicity="Unspecified" Name="Complexity" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:10:39.646" PmLastModified="2020-03-30T11:11:13.911" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQh" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="eJCtVI6GAqAQcAfy" Multiplicity="Unspecified" Name="Use Case Status" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:10:39.646" PmLastModified="2020-03-30T11:11:13.911" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQi" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id=".JCtVI6GAqAQcAfz" Multiplicity="Unspecified" Name="Implementation Status" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:10:39.647" PmLastModified="2020-03-30T11:11:13.911" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQj" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id=".JCtVI6GAqAQcAf0" Multiplicity="Unspecified" Name="Preconditions" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:10:39.647" PmLastModified="2020-03-30T11:11:13.911" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQk" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="BJCtVI6GAqAQcAf1" Multiplicity="Unspecified" Name="Post-conditions" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:10:39.648" PmLastModified="2020-03-30T11:11:13.911" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQl" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="BJCtVI6GAqAQcAf2" Multiplicity="Unspecified" Name="Author" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:10:39.648" PmLastModified="2020-03-30T11:11:13.911" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQm" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="hJCtVI6GAqAQcAf3" Multiplicity="Unspecified" Name="Assumptions" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:10:39.649" PmLastModified="2020-03-30T11:11:13.911" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQn" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+							</ModelChildren>
+						</TaggedValueContainer>
+					</TaggedValues>
+					<PrimaryActors>
+						<Actor Idref="W0S25I6GAqAQcAeQ" Name="Laser"/>
+					</PrimaryActors>
+					<MasterView>
+						<UseCase Idref="aJCtVI6GAqAQcAfm" Name="Odbieranie instrukcji"/>
+					</MasterView>
+				</UseCase>
+				<UseCase Abstract="false" BacklogActivityId="0" BusinessModel="false" ContextName_IsNull="true" DescNameColumnWidth="0" DescValueColumnWidth="0" Documentation_plain="" Id="gUJtVI6GAqAQcAgo" Justification="" Leaf="false" Name="Awaryjne zatrzymanie pracy lasera" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:59.873" PmLastModified="2020-03-30T12:18:00.542" PostConditions_IsNull="true" PreConditions_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" Root="false" ScheduleRowHeight="24" Status="Identify" TaskPoolId="0" TaskPoolName_IsNull="true" TemplateName_IsNull="true" TestingConfig_IsNull="true" TestingSetup_IsNull="true" UcRank="Unspecified" UseCaseDescriptionDiagramId_IsNull="true" UserID="UC12" UserIDLastNumericValue="0">
+					<Stereotypes>
+						<Stereotype Idref="KvGmEI6GAqAQcAQe" Name="UseCase"/>
+					</Stereotypes>
+					<TaggedValues>
+						<TaggedValueContainer CustomizedOrdering="false" Id="QUJtVI6GAqAQcAgp" Name="" SubLevelTaggedValueCustomizedOrdering="false">
+							<ModelChildren>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="wUJtVI6GAqAQcAgq" Multiplicity="Unspecified" Name="Level" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:59.875" PmLastModified="2020-03-30T11:12:10.037" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQg" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="wUJtVI6GAqAQcAgr" Multiplicity="Unspecified" Name="Complexity" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:59.875" PmLastModified="2020-03-30T11:12:10.037" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQh" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="IUJtVI6GAqAQcAgs" Multiplicity="Unspecified" Name="Use Case Status" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:59.876" PmLastModified="2020-03-30T11:12:10.037" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQi" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="IUJtVI6GAqAQcAgt" Multiplicity="Unspecified" Name="Implementation Status" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:59.876" PmLastModified="2020-03-30T11:12:10.037" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQj" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="IUJtVI6GAqAQcAgu" Multiplicity="Unspecified" Name="Preconditions" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:59.876" PmLastModified="2020-03-30T11:12:10.037" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQk" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="oUJtVI6GAqAQcAgv" Multiplicity="Unspecified" Name="Post-conditions" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:59.877" PmLastModified="2020-03-30T11:12:10.037" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQl" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="oUJtVI6GAqAQcAgw" Multiplicity="Unspecified" Name="Author" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:59.877" PmLastModified="2020-03-30T11:12:10.037" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQm" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="oUJtVI6GAqAQcAgx" Multiplicity="Unspecified" Name="Assumptions" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:59.877" PmLastModified="2020-03-30T11:12:10.037" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQn" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+							</ModelChildren>
+						</TaggedValueContainer>
+					</TaggedValues>
+					<PrimaryActors>
+						<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+					</PrimaryActors>
+					<MasterView>
+						<UseCase Idref="gUJtVI6GAqAQcAgn" Name="Awaryjne zatrzymanie pracy lasera"/>
+					</MasterView>
+				</UseCase>
+				<UseCase Abstract="false" BacklogActivityId="0" BusinessModel="false" ContextName_IsNull="true" DescNameColumnWidth="0" DescValueColumnWidth="0" Documentation_plain="" Id="PK8dVI6GAqAQcAiW" Justification="" Leaf="false" Name="Wczytanie obrazu wektorowego" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:14:56.700" PmLastModified="2020-03-30T11:15:20.322" PostConditions_IsNull="true" PreConditions_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" Root="false" ScheduleRowHeight="24" Status="Identify" TaskPoolId="0" TaskPoolName_IsNull="true" TemplateName_IsNull="true" TestingConfig_IsNull="true" TestingSetup_IsNull="true" UcRank="Unspecified" UseCaseDescriptionDiagramId_IsNull="true" UserID="UC13" UserIDLastNumericValue="0">
+					<Stereotypes>
+						<Stereotype Idref="KvGmEI6GAqAQcAQe" Name="UseCase"/>
+					</Stereotypes>
+					<TaggedValues>
+						<TaggedValueContainer CustomizedOrdering="false" Id="vK8dVI6GAqAQcAiX" Name="" SubLevelTaggedValueCustomizedOrdering="false">
+							<ModelChildren>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="vK8dVI6GAqAQcAiY" Multiplicity="Unspecified" Name="Level" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:14:56.701" PmLastModified="2020-03-30T11:15:20.323" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQg" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="fK8dVI6GAqAQcAiZ" Multiplicity="Unspecified" Name="Complexity" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:14:56.702" PmLastModified="2020-03-30T11:15:20.323" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQh" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="fK8dVI6GAqAQcAia" Multiplicity="Unspecified" Name="Use Case Status" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:14:56.702" PmLastModified="2020-03-30T11:15:20.323" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQi" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="fK8dVI6GAqAQcAib" Multiplicity="Unspecified" Name="Implementation Status" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:14:56.702" PmLastModified="2020-03-30T11:15:20.323" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQj" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="_K8dVI6GAqAQcAic" Multiplicity="Unspecified" Name="Preconditions" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:14:56.703" PmLastModified="2020-03-30T11:15:20.323" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQk" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="_K8dVI6GAqAQcAid" Multiplicity="Unspecified" Name="Post-conditions" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:14:56.703" PmLastModified="2020-03-30T11:15:20.323" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQl" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="_K8dVI6GAqAQcAie" Multiplicity="Unspecified" Name="Author" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:14:56.703" PmLastModified="2020-03-30T11:15:20.323" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQm" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="_K8dVI6GAqAQcAif" Multiplicity="Unspecified" Name="Assumptions" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:14:56.703" PmLastModified="2020-03-30T11:15:20.323" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQn" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+							</ModelChildren>
+						</TaggedValueContainer>
+					</TaggedValues>
+					<PrimaryActors>
+						<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+					</PrimaryActors>
+					<MasterView>
+						<UseCase Idref="PK8dVI6GAqAQcAiV" Name="Wczytanie obrazu wektorowego"/>
+					</MasterView>
+				</UseCase>
+				<UseCase Abstract="false" BacklogActivityId="0" BusinessModel="false" ContextName_IsNull="true" DescNameColumnWidth="0" DescValueColumnWidth="0" Documentation_plain="" Id="02CPVI6GAqAQcAi." Justification="" Leaf="false" Name="Sprawdzenie postępu grawerowania" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:11.211" PmLastModified="2020-03-30T12:16:38.093" PostConditions_IsNull="true" PreConditions_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" Root="false" ScheduleRowHeight="24" Status="Identify" TaskPoolId="0" TaskPoolName_IsNull="true" TemplateName_IsNull="true" TestingConfig_IsNull="true" TestingSetup_IsNull="true" UcRank="Unspecified" UseCaseDescriptionDiagramId_IsNull="true" UserID="UC14" UserIDLastNumericValue="0">
+					<Stereotypes>
+						<Stereotype Idref="KvGmEI6GAqAQcAQe" Name="UseCase"/>
+					</Stereotypes>
+					<TaggedValues>
+						<TaggedValueContainer CustomizedOrdering="false" Id="M2CPVI6GAqAQcAi_" Name="" SubLevelTaggedValueCustomizedOrdering="false">
+							<ModelChildren>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="s2CPVI6GAqAQcAjA" Multiplicity="Unspecified" Name="Level" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:11.213" PmLastModified="2020-03-30T12:16:38.095" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQg" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="s2CPVI6GAqAQcAjB" Multiplicity="Unspecified" Name="Complexity" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:11.213" PmLastModified="2020-03-30T12:16:38.095" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQh" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="s2CPVI6GAqAQcAjC" Multiplicity="Unspecified" Name="Use Case Status" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:11.213" PmLastModified="2020-03-30T12:16:38.095" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQi" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="c2CPVI6GAqAQcAjD" Multiplicity="Unspecified" Name="Implementation Status" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:11.214" PmLastModified="2020-03-30T12:16:38.095" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQj" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="c2CPVI6GAqAQcAjE" Multiplicity="Unspecified" Name="Preconditions" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:11.214" PmLastModified="2020-03-30T12:16:38.095" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQk" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="c2CPVI6GAqAQcAjF" Multiplicity="Unspecified" Name="Post-conditions" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:11.214" PmLastModified="2020-03-30T12:16:38.095" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQl" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="82CPVI6GAqAQcAjG" Multiplicity="Unspecified" Name="Author" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:11.215" PmLastModified="2020-03-30T12:16:38.095" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQm" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="82CPVI6GAqAQcAjH" Multiplicity="Unspecified" Name="Assumptions" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:11.215" PmLastModified="2020-03-30T12:16:38.095" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQn" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+							</ModelChildren>
+						</TaggedValueContainer>
+					</TaggedValues>
+					<PrimaryActors>
+						<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+					</PrimaryActors>
+					<MasterView>
+						<UseCase Idref="02CPVI6GAqAQcAi9" Name="Sprawdzenie postępu grawerowania"/>
+					</MasterView>
+				</UseCase>
+				<UseCase Abstract="false" BacklogActivityId="0" BusinessModel="false" ContextName_IsNull="true" DescNameColumnWidth="0" DescValueColumnWidth="0" Documentation_plain="" Id="34WvVI6GAqAQcAlM" Justification="" Leaf="false" Name="Wizualizacja obrazu" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:13.083" PmLastModified="2020-03-30T12:21:34.848" PostConditions_IsNull="true" PreConditions_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" Root="false" ScheduleRowHeight="24" Status="Identify" TaskPoolId="0" TaskPoolName_IsNull="true" TemplateName_IsNull="true" TestingConfig_IsNull="true" TestingSetup_IsNull="true" UcRank="Unspecified" UseCaseDescriptionDiagramId_IsNull="true" UserID="UC15" UserIDLastNumericValue="0">
+					<Stereotypes>
+						<Stereotype Idref="KvGmEI6GAqAQcAQe" Name="UseCase"/>
+					</Stereotypes>
+					<TaggedValues>
+						<TaggedValueContainer CustomizedOrdering="false" Id="v4WvVI6GAqAQcAlN" Name="" SubLevelTaggedValueCustomizedOrdering="false">
+							<ModelChildren>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="v4WvVI6GAqAQcAlO" Multiplicity="Unspecified" Name="Level" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:13.085" PmLastModified="2020-03-30T12:21:34.851" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQg" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="f4WvVI6GAqAQcAlP" Multiplicity="Unspecified" Name="Complexity" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:13.086" PmLastModified="2020-03-30T12:21:34.851" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQh" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="f4WvVI6GAqAQcAlQ" Multiplicity="Unspecified" Name="Use Case Status" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:13.086" PmLastModified="2020-03-30T12:21:34.851" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQi" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="f4WvVI6GAqAQcAlR" Multiplicity="Unspecified" Name="Implementation Status" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:13.086" PmLastModified="2020-03-30T12:21:34.851" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQj" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="2" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="_4WvVI6GAqAQcAlS" Multiplicity="Unspecified" Name="Preconditions" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:13.087" PmLastModified="2020-03-30T12:21:34.851" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQk" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="_4WvVI6GAqAQcAlT" Multiplicity="Unspecified" Name="Post-conditions" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:13.087" PmLastModified="2020-03-30T12:21:34.851" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQl" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="_4WvVI6GAqAQcAlU" Multiplicity="Unspecified" Name="Author" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:13.087" PmLastModified="2020-03-30T12:21:34.851" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQm" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+								<TaggedValue ArchimatePropertyDefId_IsNull="true" BacklogActivityId="0" Documentation_plain="" HtmlValue_IsNull="true" Id="_4WvVI6GAqAQcAlV" Multiplicity="Unspecified" Name="Assumptions" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:13.087" PmLastModified="2020-03-30T12:21:34.851" QualityReason_IsNull="true" QualityScore="-1" TagDefinition="wfGmEI6GAqAQcAQn" TagDefinitionStereotype="KvGmEI6GAqAQcAQe" Type="Multi-line Text" UserIDLastNumericValue="0" UserID_IsNull="true" Value=""/>
+							</ModelChildren>
+						</TaggedValueContainer>
+					</TaggedValues>
+					<PrimaryActors>
+						<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+					</PrimaryActors>
+					<MasterView>
+						<UseCase Idref="34WvVI6GAqAQcAlL" Name="Wizualizacja obrazu"/>
+					</MasterView>
+				</UseCase>
+			</ModelChildren>
+		</System>
+		<ModelRelationshipContainer BacklogActivityId="0" Documentation_plain="" Id="dUfWEI6GAqAQcAXi" Name="relationships" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:23:40.334" PmLastModified="2020-03-23T18:23:40.340" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true">
+			<ModelChildren>
+				<ModelRelationshipContainer BacklogActivityId="0" Documentation_plain="" Id="dUfWEI6GAqAQcAXj" Name="Association" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:23:40.334" PmLastModified="2020-03-30T12:21:34.854" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true">
+					<ModelChildren>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="39YWEI6GAqAQcAWX" EndRelationshipToMetaModelElement="_gLWEI6GAqAQcAWq" Id="at3WEI6GAqAQcAXY" Leaf="false" OrderingInProfile="-1" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:23:30.262" PmLastModified="2020-03-23T18:23:40.335" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="39YWEI6GAqAQcAWX" Id="Ot3WEI6GAqAQcAXa" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:23:30.268" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="ut3WEI6GAqAQcAXc" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:23:30.269" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+									</Type>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="_gLWEI6GAqAQcAWq" Id="ut3WEI6GAqAQcAXd" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:23:30.269" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="ut3WEI6GAqAQcAXe" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:23:30.269" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<UseCase Idref="_gLWEI6GAqAQcAWq" Name="Wczytywanie obrazu rastrowego"/>
+									</Type>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="dt3WEI6GAqAQcAXf"/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="mfE2EI6GAqAQcAXq" EndRelationshipToMetaModelElement="39YWEI6GAqAQcAWX" Id=".fS2EI6GAqAQcAYQ" Leaf="false" OrderingInProfile="-1" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:05.567" PmLastModified="2020-03-23T18:25:15.600" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="mfE2EI6GAqAQcAXq" Id=".fS2EI6GAqAQcAYR" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:05.567" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id=".fS2EI6GAqAQcAYS" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:05.567" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<UseCase Idref="mfE2EI6GAqAQcAXq" Name="Wybór gotowego pliku do wygrawerowania"/>
+									</Type>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="39YWEI6GAqAQcAWX" Id=".fS2EI6GAqAQcAYT" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:05.567" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id=".fS2EI6GAqAQcAYU" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:05.567" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+									</Type>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="ZfS2EI6GAqAQcAYV"/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="Eym2EI6GAqAQcAYe" EndRelationshipToMetaModelElement="39YWEI6GAqAQcAWX" Id="_Xe2EI6GAqAQcAY4" Leaf="false" OrderingInProfile="-1" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:54.495" PmLastModified="2020-03-23T18:26:42.367" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="Eym2EI6GAqAQcAYe" Id="_Xe2EI6GAqAQcAY5" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:54.495" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="_Xe2EI6GAqAQcAY6" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:54.495" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<UseCase Idref="Eym2EI6GAqAQcAYe" Name="Ustawienia grawerowania"/>
+									</Type>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="39YWEI6GAqAQcAWX" Id="_Xe2EI6GAqAQcAY7" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:54.495" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="_Xe2EI6GAqAQcAY8" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:25:54.495" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+									</Type>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="43e2EI6GAqAQcAY9"/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="_jL2EI6GAqAQcAZ6" EndRelationshipToMetaModelElement="39YWEI6GAqAQcAWX" Id="2ugOEI6GAqAQcAap" Leaf="false" OrderingInProfile="-1" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:28:15.963" PmLastModified="2020-03-23T18:28:25.993" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="_jL2EI6GAqAQcAZ6" Id="2ugOEI6GAqAQcAaq" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:28:15.963" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="2ugOEI6GAqAQcAar" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:28:15.963" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<UseCase Idref="_jL2EI6GAqAQcAZ6" Name="Rozpoczęcie grawerowania"/>
+									</Type>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="39YWEI6GAqAQcAWX" Id="2ugOEI6GAqAQcAas" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:28:15.963" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="2ugOEI6GAqAQcAat" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:28:15.963" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+									</Type>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="RugOEI6GAqAQcAau"/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="39YWEI6GAqAQcAWX" EndRelationshipToMetaModelElement="Zz0u5I6GAqAQcAgC" Id="13cu5I6GAqAQcAgQ" Leaf="false" OrderingInProfile="-1" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:46.987" PmLastModified="2020-03-29T20:01:49.970" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="39YWEI6GAqAQcAWX" Id="13cu5I6GAqAQcAgR" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:46.987" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="13cu5I6GAqAQcAgS" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:46.987" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+									</Type>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="Zz0u5I6GAqAQcAgC" Id="13cu5I6GAqAQcAgT" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:46.987" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="13cu5I6GAqAQcAgU" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-29T20:01:46.987" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<UseCase Idref="Zz0u5I6GAqAQcAgC" Name="Uruchomienie testu lasera"/>
+									</Type>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="P3cu5I6GAqAQcAgV"/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="aJCtVI6GAqAQcAfn" EndRelationshipToMetaModelElement="W0S25I6GAqAQcAeQ" Id="V_qtVI6GAqAQcAgU" Leaf="false" OrderingInProfile="-1" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:01.866" PmLastModified="2020-03-30T11:11:13.909" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="aJCtVI6GAqAQcAfn" Id="V_qtVI6GAqAQcAgV" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:01.866" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="V_qtVI6GAqAQcAgW" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:01.866" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<UseCase Idref="aJCtVI6GAqAQcAfn" Name="Odbieranie instrukcji"/>
+									</Type>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="W0S25I6GAqAQcAeQ" Id="V_qtVI6GAqAQcAgX" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:01.866" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="V_qtVI6GAqAQcAgY" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:11:01.866" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<Actor Idref="W0S25I6GAqAQcAeQ" Name="Laser"/>
+									</Type>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="P_qtVI6GAqAQcAgZ"/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="39YWEI6GAqAQcAWX" EndRelationshipToMetaModelElement="PK8dVI6GAqAQcAiW" Id="olSdVI6GAqAQcAio" Leaf="false" OrderingInProfile="-1" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:15:10.277" PmLastModified="2020-03-30T11:15:20.321" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="39YWEI6GAqAQcAWX" Id="olSdVI6GAqAQcAip" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:15:10.277" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="olSdVI6GAqAQcAiq" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:15:10.277" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+									</Type>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="PK8dVI6GAqAQcAiW" Id="olSdVI6GAqAQcAir" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:15:10.277" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="olSdVI6GAqAQcAis" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-30T11:15:10.277" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<UseCase Idref="PK8dVI6GAqAQcAiW" Name="Wczytanie obrazu wektorowego"/>
+									</Type>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="alSdVI6GAqAQcAit"/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="39YWEI6GAqAQcAWX" EndRelationshipToMetaModelElement="02CPVI6GAqAQcAi." Id="d9yPVI6GAqAQcAjM" Leaf="false" OrderingInProfile="-1" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:24.814" PmLastModified="2020-03-30T12:16:38.093" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="39YWEI6GAqAQcAWX" Id="d9yPVI6GAqAQcAjN" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:24.814" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="d9yPVI6GAqAQcAjO" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:24.814" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+									</Type>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="02CPVI6GAqAQcAi." Id="d9yPVI6GAqAQcAjP" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:24.814" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="d9yPVI6GAqAQcAjQ" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:16:24.814" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<UseCase Idref="02CPVI6GAqAQcAi." Name="Sprawdzenie postępu grawerowania"/>
+									</Type>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="ADyPVI6GAqAQcAjR"/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="39YWEI6GAqAQcAWX" EndRelationshipToMetaModelElement="gUJtVI6GAqAQcAgo" Id="r1JPVI6GAqAQcAj0" Leaf="false" OrderingInProfile="-1" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:17:34.197" PmLastModified="2020-03-30T12:17:44.250" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="39YWEI6GAqAQcAWX" Id="r1JPVI6GAqAQcAj1" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:17:34.197" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="r1JPVI6GAqAQcAj2" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:17:34.197" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+									</Type>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="gUJtVI6GAqAQcAgo" Id="r1JPVI6GAqAQcAj3" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:17:34.197" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="r1JPVI6GAqAQcAj4" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:17:34.197" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<UseCase Idref="gUJtVI6GAqAQcAgo" Name="Awaryjne zatrzymanie pracy lasera"/>
+									</Type>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="0NJPVI6GAqAQcAj5"/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="39YWEI6GAqAQcAWX" EndRelationshipToMetaModelElement="34WvVI6GAqAQcAlM" Id="g_OvVI6GAqAQcAla" Leaf="false" OrderingInProfile="-1" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:24.801" PmLastModified="2020-03-30T12:21:34.848" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="39YWEI6GAqAQcAWX" Id="g_OvVI6GAqAQcAlb" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:24.801" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="g_OvVI6GAqAQcAlc" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:24.801" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<Actor Idref="39YWEI6GAqAQcAWX" Name="Użytkownik"/>
+									</Type>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="34WvVI6GAqAQcAlM" Id="g_OvVI6GAqAQcAld" JavaCodeAttributeName="" Leaf="false" Multiplicity="Unspecified" Navigable="Navigable" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:24.801" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="g_OvVI6GAqAQcAle" Name="" PmAuthor="admin" PmCreateDateTime="2020-03-30T12:21:24.801" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+									<Type>
+										<UseCase Idref="34WvVI6GAqAQcAlM" Name="Wizualizacja obrazu"/>
+									</Type>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="q_OvVI6GAqAQcAlf"/>
+							</MasterView>
+						</Association>
+					</ModelChildren>
+				</ModelRelationshipContainer>
+			</ModelChildren>
+		</ModelRelationshipContainer>
+		<Actor Abstract="false" BacklogActivityId="0" BusinessModel="false" Complexity_IsNull="true" Documentation_plain="" FontSize="0" Goals_IsNull="true" Id="W0S25I6GAqAQcAeQ" Leaf="false" Name="Laser" PmAuthor="admin" PmCreateDateTime="2020-03-29T19:53:15.994" PmLastModified="2020-03-30T12:17:44.255" QualityReason_IsNull="true" QualityScore="-1" Root="false" UserID="AC02" UserIDLastNumericValue="0" Visibility="public">
+			<MasterView>
+				<Actor Idref="m0S25I6GAqAQcAeP" Name="Laser"/>
+			</MasterView>
+		</Actor>
+	</Models>
+	<Diagrams>
+		<UseCaseDiagram AlignToGrid="false" AutoFitShapesSize="false" ConnectionPointStyle="0" ConnectorLabelOrientation="0" ConnectorLineJumps="0" ConnectorLineJumpsSize="0" ConnectorModelElementNameAlignment="4" ConnectorStyle="1" DiagramBackground="rgb(255, 255, 255)" Editable="true" FollowDiagramParentElement="true" GridColor="rgb(192, 192, 192)" GridHeight="10" GridVisible="false" GridWidth="10" Height="602" HideConnectorIfFromToIsHidden="0" HideEmptyTaggedValues="false" Id="QilmEI6GAqAQcAWJ" ImageHeight="0" ImageScale="1.0" ImageWidth="0" InitializeDiagramForCreate="true" Maximized="true" ModelElementNameAlignment="4" Name="Use Case Diagram1" PaintConnectorThroughLabel="1" PmAuthor="admin" PmCreateDateTime="2020-03-23T18:17:52.578" PmLastModified="2020-03-30T12:21:24.848" PointConnectorEndToCompartmentMember="true" QualityScore="-1" RequestFitSizeWithPromptUser="false" RequestValidateSnapToGrid="false" ShapePresentationOption="0" ShowActivityStateNodeCaption="524287" ShowAllocatedFrom="true" ShowAllocatedTo="true" ShowColorLegend="false" ShowConnectorLegend="false" ShowConnectorName="0" ShowConstraints="false" ShowDefaultPackage="false" ShowExtendCondition="false" ShowInformationItemOption="2" ShowPMAuthor="false" ShowPMDifficulty="false" ShowPMDiscipline="false" ShowPMIteration="false" ShowPMPhase="false" ShowPMPriority="false" ShowPMStatus="false" ShowPMVersion="false" ShowPackageNameStyle="0" ShowShapeLegend="false" ShowShapeStereotypeIconName="true" ShowStereotypes="true" ShowTaggedValues="false" ShowUseCaseExtensionPoint="true" ShowUseCaseId="false" TeamworkCreateDateTime="0" TrimmedHeight="0" TrimmedWidth="0" UseCaseDisplayOption="0" Width="984" X="0" Y="0" ZoomRatio="1.4" _actorDisplayOption="0" _globalPaletteOption="true" documentation="&lt;html&gt;&#13;&#10;  &lt;head&gt;&#13;&#10;    &lt;style type=&quot;text/css&quot;&gt;&#10;      &lt;!--&#10;        body { color: #000000; font-family: Dialog; font-size: 12px }&#10;      --&gt;&#10;    &lt;/style&gt;&#13;&#10;    &#13;&#10;  &lt;/head&gt;&#13;&#10;  &lt;body&gt;&#13;&#10;    &lt;p&gt;&#13;&#10;      &#13;&#10;    &lt;/p&gt;&#13;&#10;  &lt;/body&gt;&#13;&#10;&lt;/html&gt;&#13;&#10;">
+			<Shapes>
+				<Actor Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" CreatorDiagramType="UseCaseDiagram" DisplayOption="3" Foreground="rgb(0, 0, 0)" Height="60" Id="m0S25I6GAqAQcAeP" MetaModelElement="W0S25I6GAqAQcAeQ" Model="W0S25I6GAqAQcAeQ" ModelElementNameAlignment="9" Name="Laser" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowStereotypeIconName="0" Width="30" X="751" Y="181" ZOrder="14">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="15" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="South" Visible="true" Width="48" X="742" Y="241"/>
+					<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+				</Actor>
+				<System Background="rgb(122, 207, 245)" CaptionAlignment="0" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" Foreground="rgb(0, 0, 0)" Height="394" Id="pzZWEI6GAqAQcAWd" MetaModelElement="ZzZWEI6GAqAQcAWe" Model="ZzZWEI6GAqAQcAWe" ModelElementNameAlignment="1" Name="System" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowStereotypeIconName="0" Width="343" X="324" Y="24" ZOrder="24">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="394" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="Center" Visible="true" Width="343" X="0" Y="0"/>
+					<DiagramElementChildren>
+						<UseCase Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" DisplayOption="3" Foreground="rgb(0, 0, 0)" Height="40" Id="34WvVI6GAqAQcAlL" MetaModelElement="34WvVI6GAqAQcAlM" Model="34WvVI6GAqAQcAlM" ModelElementNameAlignment="9" Name="Wizualizacja obrazu" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowExtensionPoint="true" ShowStereotypeIconName="0" Width="108" X="333" Y="144" ZOrder="2">
+							<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+							<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption Height="40" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="Center" Visible="true" Width="108" X="0" Y="0"/>
+							<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+						</UseCase>
+						<UseCase Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" DisplayOption="3" Foreground="rgb(0, 0, 0)" Height="40" Id="02CPVI6GAqAQcAi9" MetaModelElement="02CPVI6GAqAQcAi." Model="02CPVI6GAqAQcAi." ModelElementNameAlignment="9" Name="Sprawdzenie postępu grawerowania" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowExtensionPoint="true" ShowStereotypeIconName="0" Width="188" X="407" Y="332" ZOrder="4">
+							<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+							<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption Height="40" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="Center" Visible="true" Width="188" X="0" Y="0"/>
+							<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+						</UseCase>
+						<UseCase Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" DisplayOption="3" Foreground="rgb(0, 0, 0)" Height="40" Id="PK8dVI6GAqAQcAiV" MetaModelElement="PK8dVI6GAqAQcAiW" Model="PK8dVI6GAqAQcAiW" ModelElementNameAlignment="9" Name="Wczytanie obrazu wektorowego" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowExtensionPoint="true" ShowStereotypeIconName="0" Width="166" X="347" Y="64" ZOrder="6">
+							<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+							<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption Height="40" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="Center" Visible="true" Width="166" X="0" Y="0"/>
+							<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+						</UseCase>
+						<UseCase Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" DisplayOption="3" Foreground="rgb(0, 0, 0)" Height="40" Id="gUJtVI6GAqAQcAgn" MetaModelElement="gUJtVI6GAqAQcAgo" Model="gUJtVI6GAqAQcAgo" ModelElementNameAlignment="9" Name="Awaryjne zatrzymanie pracy lasera" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowExtensionPoint="true" ShowStereotypeIconName="0" Width="173" X="375" Y="224" ZOrder="8">
+							<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+							<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption Height="40" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="Center" Visible="true" Width="173" X="0" Y="0"/>
+							<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+						</UseCase>
+						<UseCase Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" DisplayOption="3" Foreground="rgb(0, 0, 0)" Height="40" Id="aJCtVI6GAqAQcAfm" MetaModelElement="aJCtVI6GAqAQcAfn" Model="aJCtVI6GAqAQcAfn" ModelElementNameAlignment="9" Name="Odbieranie instrukcji" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowExtensionPoint="true" ShowStereotypeIconName="0" Width="80" X="550" Y="247" ZOrder="10">
+							<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+							<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption Height="40" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="Center" Visible="true" Width="80" X="0" Y="0"/>
+							<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+						</UseCase>
+						<UseCase Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" DisplayOption="3" Foreground="rgb(0, 0, 0)" Height="40" Id="Zz0u5I6GAqAQcAgB" MetaModelElement="Zz0u5I6GAqAQcAgC" Model="Zz0u5I6GAqAQcAgC" ModelElementNameAlignment="9" Name="Uruchomienie testu lasera" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowExtensionPoint="true" ShowStereotypeIconName="0" Width="138" X="328" Y="369" ZOrder="12">
+							<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+							<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption Height="40" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="Center" Visible="true" Width="138" X="0" Y="0"/>
+							<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+						</UseCase>
+						<UseCase Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" DisplayOption="3" Foreground="rgb(0, 0, 0)" Height="49" Id="_jL2EI6GAqAQcAZ5" MetaModelElement="_jL2EI6GAqAQcAZ6" Model="_jL2EI6GAqAQcAZ6" ModelElementNameAlignment="9" Name="Rozpoczęcie grawerowania" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowExtensionPoint="true" ShowStereotypeIconName="0" Width="103" X="391" Y="267" ZOrder="16">
+							<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+							<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption Height="49" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="Center" Visible="true" Width="104" X="0" Y="0"/>
+							<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+						</UseCase>
+						<UseCase Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" DisplayOption="3" Foreground="rgb(0, 0, 0)" Height="40" Id="Eym2EI6GAqAQcAYd" MetaModelElement="Eym2EI6GAqAQcAYe" Model="Eym2EI6GAqAQcAYe" ModelElementNameAlignment="9" Name="Ustawienia grawerowania" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowExtensionPoint="true" ShowStereotypeIconName="0" Width="80" X="391" Y="184" ZOrder="18">
+							<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+							<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption Height="40" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="Center" Visible="true" Width="80" X="0" Y="0"/>
+							<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+						</UseCase>
+						<UseCase Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" DisplayOption="3" Foreground="rgb(0, 0, 0)" Height="40" Id="GfE2EI6GAqAQcAXp" MetaModelElement="mfE2EI6GAqAQcAXq" Model="mfE2EI6GAqAQcAXq" ModelElementNameAlignment="9" Name="Wybór gotowego pliku do wygrawerowania" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowExtensionPoint="true" ShowStereotypeIconName="0" Width="219" X="347" Y="104" ZOrder="20">
+							<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+							<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption Height="40" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="Center" Visible="true" Width="219" X="0" Y="0"/>
+							<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+						</UseCase>
+						<UseCase Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" DisplayOption="3" Foreground="rgb(0, 0, 0)" Height="40" Id="PgLWEI6GAqAQcAWp" MetaModelElement="_gLWEI6GAqAQcAWq" Model="_gLWEI6GAqAQcAWq" ModelElementNameAlignment="9" Name="Wczytywanie obrazu rastrowego" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowExtensionPoint="true" ShowStereotypeIconName="0" Width="113" X="328" Y="24" ZOrder="22">
+							<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+							<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption Height="40" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="Center" Visible="true" Width="113" X="0" Y="0"/>
+							<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+						</UseCase>
+					</DiagramElementChildren>
+					<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+				</System>
+				<Actor Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" CreatorDiagramType="UseCaseDiagram" DisplayOption="3" Foreground="rgb(0, 0, 0)" Height="60" Id="79YWEI6GAqAQcAWW" MetaModelElement="39YWEI6GAqAQcAWX" Model="39YWEI6GAqAQcAWX" ModelElementNameAlignment="9" Name="Użytkownik" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowStereotypeIconName="0" Width="30" X="69" Y="227" ZOrder="26">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="15" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="South" Visible="true" Width="76" X="46" Y="287"/>
+					<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+				</Actor>
+			</Shapes>
+			<Connectors>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="UseCaseDiagram" Foreground="rgb(0, 0, 0)" From="79YWEI6GAqAQcAWW" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="false" HasMultiplicityBShape="false" HasRoleAShape="false" HasRoleBShape="false" Height="262" Id="dt3WEI6GAqAQcAXf" MetaModelElement="at3WEI6GAqAQcAXY" Model="at3WEI6GAqAQcAXY" ModelElementNameAlignment="9" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="PgLWEI6GAqAQcAWp" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="311" X="63" Y="20" ZOrder="28">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="209" Y="151"/>
+					<Points>
+						<Point X="99.0" Y="247.0"/>
+						<Point X="339.0" Y="56.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="UseCaseDiagram" Foreground="rgb(0, 0, 0)" From="GfE2EI6GAqAQcAXp" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="false" HasMultiplicityBShape="false" HasRoleAShape="false" HasRoleBShape="false" Height="171" Id="ZfS2EI6GAqAQcAYV" MetaModelElement=".fS2EI6GAqAQcAYQ" Model=".fS2EI6GAqAQcAYQ" ModelElementNameAlignment="9" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="79YWEI6GAqAQcAWW" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="340" X="64" Y="100" ZOrder="30">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="225" Y="187"/>
+					<Points>
+						<Point X="369.0" Y="136.0"/>
+						<Point X="100.0" Y="236.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="UseCaseDiagram" Foreground="rgb(0, 0, 0)" From="Eym2EI6GAqAQcAYd" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="false" HasMultiplicityBShape="false" HasRoleAShape="false" HasRoleBShape="false" Height="116" Id="43e2EI6GAqAQcAY9" MetaModelElement="_Xe2EI6GAqAQcAY4" Model="_Xe2EI6GAqAQcAY4" ModelElementNameAlignment="9" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="79YWEI6GAqAQcAWW" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="362" X="63" Y="168" ZOrder="32">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="236" Y="219"/>
+					<Points>
+						<Point X="390.0" Y="204.0"/>
+						<Point X="319.0" Y="204.0"/>
+						<Point X="99.0" Y="249.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="UseCaseDiagram" Foreground="rgb(0, 0, 0)" From="_jL2EI6GAqAQcAZ5" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="false" HasMultiplicityBShape="false" HasRoleAShape="false" HasRoleBShape="false" Height="71" Id="RugOEI6GAqAQcAau" MetaModelElement="2ugOEI6GAqAQcAap" Model="2ugOEI6GAqAQcAap" ModelElementNameAlignment="9" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="79YWEI6GAqAQcAWW" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="370" X="63" Y="244" ZOrder="34">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="237" Y="280"/>
+					<Points>
+						<Point X="397.0" Y="280.0"/>
+						<Point X="99.0" Y="280.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="UseCaseDiagram" Foreground="rgb(0, 0, 0)" From="79YWEI6GAqAQcAWW" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="false" HasMultiplicityBShape="false" HasRoleAShape="false" HasRoleBShape="false" Height="142" Id="P3cu5I6GAqAQcAgV" MetaModelElement="13cu5I6GAqAQcAgQ" Model="13cu5I6GAqAQcAgQ" ModelElementNameAlignment="9" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="Zz0u5I6GAqAQcAgB" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="296" X="87" Y="268" ZOrder="36">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="225" Y="340"/>
+					<Points>
+						<Point X="122.0" Y="304.0"/>
+						<Point X="347.0" Y="375.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="UseCaseDiagram" Foreground="rgb(0, 0, 0)" From="aJCtVI6GAqAQcAfm" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="false" HasMultiplicityBShape="false" HasRoleAShape="false" HasRoleBShape="false" Height="114" Id="P_qtVI6GAqAQcAgZ" MetaModelElement="V_qtVI6GAqAQcAgU" Model="V_qtVI6GAqAQcAgU" ModelElementNameAlignment="9" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="m0S25I6GAqAQcAeP" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="242" X="559" Y="185" ZOrder="38">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="670" Y="242"/>
+					<Points>
+						<Point X="609.0" Y="249.0"/>
+						<Point X="751.0" Y="235.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="UseCaseDiagram" Foreground="rgb(0, 0, 0)" From="79YWEI6GAqAQcAWW" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="false" HasMultiplicityBShape="false" HasRoleAShape="false" HasRoleBShape="false" Height="218" Id="alSdVI6GAqAQcAit" MetaModelElement="olSdVI6GAqAQcAio" Model="olSdVI6GAqAQcAio" ModelElementNameAlignment="9" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="PK8dVI6GAqAQcAiV" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="335" X="63" Y="60" ZOrder="40">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="219" Y="168"/>
+					<Points>
+						<Point X="99.0" Y="243.0"/>
+						<Point X="362.0" Y="96.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="UseCaseDiagram" Foreground="rgb(0, 0, 0)" From="79YWEI6GAqAQcAWW" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="false" HasMultiplicityBShape="false" HasRoleAShape="false" HasRoleBShape="false" Height="120" Id="ADyPVI6GAqAQcAjR" MetaModelElement="d9yPVI6GAqAQcAjM" Model="d9yPVI6GAqAQcAjM" ModelElementNameAlignment="9" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="02CPVI6GAqAQcAi9" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="415" X="63" Y="251" ZOrder="42">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="260" Y="311"/>
+					<Points>
+						<Point X="99.0" Y="287.0"/>
+						<Point X="442.0" Y="336.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="UseCaseDiagram" Foreground="rgb(0, 0, 0)" From="79YWEI6GAqAQcAWW" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="false" HasMultiplicityBShape="false" HasRoleAShape="false" HasRoleBShape="false" Height="71" Id="0NJPVI6GAqAQcAj5" MetaModelElement="r1JPVI6GAqAQcAj0" Model="r1JPVI6GAqAQcAj0" ModelElementNameAlignment="9" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="gUJtVI6GAqAQcAgn" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="367" X="63" Y="221" ZOrder="44">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="237" Y="257"/>
+					<Points>
+						<Point X="99.0" Y="257.0"/>
+						<Point X="394.0" Y="257.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="UseCaseDiagram" Foreground="rgb(0, 0, 0)" From="79YWEI6GAqAQcAWW" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="false" HasMultiplicityBShape="false" HasRoleAShape="false" HasRoleBShape="false" Height="122" Id="q_OvVI6GAqAQcAlf" MetaModelElement="g_OvVI6GAqAQcAla" Model="g_OvVI6GAqAQcAla" ModelElementNameAlignment="9" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="34WvVI6GAqAQcAlL" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="327" X="63" Y="145" ZOrder="46">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="217" Y="206"/>
+					<Points>
+						<Point X="99.0" Y="232.0"/>
+						<Point X="355.0" Y="180.0"/>
+					</Points>
+				</Association>
+			</Connectors>
+		</UseCaseDiagram>
+	</Diagrams>
+</Project>

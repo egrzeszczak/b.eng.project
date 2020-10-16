@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrawerTerminal", "GrawerTerminal\GrawerTerminal.csproj", "{53ED422E-968F-414E-9577-DFEE5A57AFF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53ED422E-968F-414E-9577-DFEE5A57AFF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53ED422E-968F-414E-9577-DFEE5A57AFF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53ED422E-968F-414E-9577-DFEE5A57AFF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53ED422E-968F-414E-9577-DFEE5A57AFF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9F827A0-AF65-42D5-A491-F74FDA9E1BA1}
+	EndGlobalSection
+EndGlobal
