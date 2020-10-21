@@ -21,10 +21,10 @@ C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\bin\Debug\ConsoleControlAPI.dll
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\bin\Debug\ConsoleControl.xml
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\bin\Debug\ConsoleControlAPI.xml
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.csprojAssemblyReference.cache
-C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.Form1.resources
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.Properties.Resources.resources
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.csproj.GenerateResource.cache
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.csproj.CoreCompileInputs.cache
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.csproj.CopyComplete
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.exe
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.pdb
+C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.MainForm.resources
