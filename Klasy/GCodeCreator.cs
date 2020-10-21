@@ -11,7 +11,7 @@ using System.Security.Cryptography.X509Certificates;
 
 // 1px == 0.2645833333 mm
 // 1mm == 3.779527559 px
-// horizontal, vertical, diagonal
+// horizontal, vertical, diagonal 
 
 namespace GCodeFromImage
 {
