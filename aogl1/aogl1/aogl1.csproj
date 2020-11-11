@@ -53,7 +53,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CanvasPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CanvasPicture.Designer.cs">
+      <DependentUpon>CanvasPicture.cs</DependentUpon>
+    </Compile>
     <Compile Include="DriverManager.cs" />
+    <Compile Include="CanvasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CanvasForm.Designer.cs">
+      <DependentUpon>CanvasForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,12 @@
     <Compile Include="PortFinder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CanvasForm.resx">
+      <DependentUpon>CanvasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CanvasPicture.resx">
+      <DependentUpon>CanvasPicture.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

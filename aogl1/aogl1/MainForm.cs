@@ -13,8 +13,12 @@ namespace aogl1
 {
     public partial class MainForm : Form
     {
-
         public enum LaserStatus { Connected, Disconnected }
+        public enum StatusBoxStatus { Connected, Disconnected, ConnectionError }
+
+
+        // Global
+        public LaserStatus laserStatus = LaserStatus.Disconnected;
         
         public MainForm()
         {
@@ -156,8 +160,6 @@ namespace aogl1
         {
             textStatus.Text = message;
         }
-
-        public enum StatusBoxStatus { Connected, Disconnected, ConnectionError }
         private void setStatusBox(StatusBoxStatus status)
         {
             switch (status)
@@ -228,6 +230,18 @@ namespace aogl1
             openFile.Filter = "Obrazy JPG (.jpg)|*.jpg|Obrazy PNG (.png)|*.png|Obrazy wektorowe (.svg)|*.svg";
             openFile.FilterIndex = 1;
             openFile.ShowDialog();
+
+            CanvasForm canvasForm = new CanvasForm()
+            {
+                Dock = DockStyle.Fill,
+                TopLevel = false,
+                TopMost = true
+            };
+            panelForForms.Controls.Add(canvasForm);
+            canvasForm.Show();
+
+            sidePanelHideAll();
+            sidePanelCollapse();
         }
 
         private void goLoadGCode_Click(object sender, EventArgs e)
@@ -248,6 +262,26 @@ namespace aogl1
         private void goConnect_Click(object sender, EventArgs e)
         {
             // Połącz z laserem
+            if(laserStatus == LaserStatus.Disconnected)
+            {
+                laserStatus = LaserStatus.Connected;
+                enableControl();
+                setStatusBox(StatusBoxStatus.Connected);
+                setStatusBarMessage("Polaczono. COM4");
+                listBoxTerminal.Items.Add("[System] Polaczono. COM4");
+                goConnect.Text = "Rozlacz";
+            } 
+            // Rozlacz z laserem
+            else
+            {
+                laserStatus = LaserStatus.Disconnected;
+                disableControl();
+                setStatusBarMessage("Rozlaczono");
+                setStatusBox(StatusBoxStatus.Disconnected);
+                listBoxTerminal.Items.Add("[System] Rozlaczono");
+                goConnect.Text = "Polacz";
+            }
+
         }
 
         private void goDriver_Click(object sender, EventArgs e)
@@ -265,49 +299,63 @@ namespace aogl1
 
         private void enableControl()
         {
-            commandLine.Enabled =
-            listBoxTerminal.Enabled =
-            labelCaret.Visible =
-            panelControlSliders.Enabled =
-            sliderFeedrate.Enabled =
-            sliderStep.Enabled =
-            panelControlButtons.Enabled =
-            buttonDOWN.Enabled =
-            buttonUP.Enabled =
-            buttonLEFT.Enabled =
-            buttonRIGHT.Enabled =
-            buttonUPLEFT.Enabled =
-            buttonUPRIGHT.Enabled =
-            buttonDOWNLEFT.Enabled =
-            buttonDOWNRIGHT.Enabled =
-            buttonHOME.Enabled =
-            buttonLaserOff.Enabled =
-            buttonLaserOn.Enabled =
+            // Przyciski
+            Object[] buttonsToManage = new Object[] { 
+                buttonUP, buttonDOWN, buttonLEFT, buttonRIGHT, 
+                buttonUPLEFT, buttonUPRIGHT, buttonDOWNLEFT, buttonDOWNRIGHT, 
+                buttonHOME, buttonLaserOn, buttonLaserOff};
+
+            foreach(Button button in buttonsToManage)
+            {
+                button.BackColor = Color.FromArgb(187, 187, 187);
+                button.FlatAppearance.BorderColor = Color.FromArgb(230,230,230);
+                button.Enabled = true;
+            }
+            // Moc Lasera
+            laserPower.BackColor = Color.FromArgb(250, 250, 250);
             laserPower.Enabled = true;
+
+            // Terminal
+            listBoxTerminal.Enabled = true;
+            listBoxTerminal.BackColor = Color.FromArgb(40, 40, 40);
+            commandLine.Enabled = true;
+            commandLine.BackColor = Color.FromArgb(48, 48, 48);
+            panelCommandLine.BackColor = Color.FromArgb(48, 48, 48);
+            panelCaret.Visible = true;
+
+            buttonHOME.BackColor = Color.FromArgb(250, 250, 250);
+            buttonLaserOn.BackColor = Color.DodgerBlue;
+            buttonLaserOn.ForeColor = Color.White;
+
+            buttonLaserOff.BackColor = Color.Firebrick;
+            buttonLaserOff.ForeColor = Color.White;
         }
 
         private void disableControl()
         {
-            // To napewno tak nie zostanie :)
-            commandLine.Enabled = 
-            listBoxTerminal.Enabled = 
-            labelCaret.Visible = 
-            panelControlSliders.Enabled = 
-            sliderFeedrate.Enabled = 
-            sliderStep.Enabled =
-            panelControlButtons.Enabled = 
-            buttonDOWN.Enabled =
-            buttonUP.Enabled =
-            buttonLEFT.Enabled =
-            buttonRIGHT.Enabled =
-            buttonUPLEFT.Enabled =
-            buttonUPRIGHT.Enabled =
-            buttonDOWNLEFT.Enabled =
-            buttonDOWNRIGHT.Enabled =
-            buttonHOME.Enabled =
-            buttonLaserOff.Enabled =
-            buttonLaserOn.Enabled =
+            // Przyciski
+            Object[] buttonsToManage = new Object[] {
+                buttonUP, buttonDOWN, buttonLEFT, buttonRIGHT,
+                buttonUPLEFT, buttonUPRIGHT, buttonDOWNLEFT, buttonDOWNRIGHT,
+                buttonHOME, buttonLaserOn, buttonLaserOff};
+
+            foreach (Button button in buttonsToManage)
+            {
+                button.BackColor = Color.FromArgb(125, 125, 125);
+                button.FlatAppearance.BorderColor = Color.FromArgb(125, 125, 125);
+                button.Enabled = false;
+            }
+            // Moc Lasera
+            laserPower.BackColor = Color.FromArgb(125, 125, 125);
             laserPower.Enabled = false;
+
+            // Terminal
+            listBoxTerminal.Enabled = false;
+            listBoxTerminal.BackColor = Color.FromArgb(40, 40, 40);
+            commandLine.Enabled = false;
+            commandLine.BackColor = Color.FromArgb(40, 40, 40);
+            panelCommandLine.BackColor = Color.FromArgb(40, 40, 40);
+            panelCaret.Visible = false;
         }
 
         #endregion
@@ -322,8 +370,10 @@ namespace aogl1
             setStatusBarMessage("Witamy w aplikacji obsługi grawera laserowego. Developer stage");
 
             // Przy braku połączenia z laserem zabierz kontrole
-            listBoxTerminal.Items.Add("Aby połączyć się z laserem, wybierz Laser > Połącz");
+            listBoxTerminal.Items.Add("[System] Aby połączyć się z laserem, wybierz Laser > Połącz");
+
             disableControl();
+            laserStatus = LaserStatus.Disconnected;
         }
 
         
