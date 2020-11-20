@@ -36,6 +36,7 @@
             // pictureBox
             // 
             this.pictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
             this.pictureBox.InitialImage = null;
             this.pictureBox.Location = new System.Drawing.Point(0, 0);
