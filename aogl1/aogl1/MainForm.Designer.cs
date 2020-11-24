@@ -458,9 +458,9 @@
             this.panelTerminal.Controls.Add(this.panelTerminalWindow);
             this.panelTerminal.Controls.Add(this.panelCommandLine);
             this.panelTerminal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTerminal.Location = new System.Drawing.Point(4, 20);
+            this.panelTerminal.Location = new System.Drawing.Point(4, 24);
             this.panelTerminal.Name = "panelTerminal";
-            this.panelTerminal.Size = new System.Drawing.Size(382, 413);
+            this.panelTerminal.Size = new System.Drawing.Size(382, 409);
             this.panelTerminal.TabIndex = 1;
             // 
             // panelTerminalWindow
@@ -471,7 +471,7 @@
             this.panelTerminalWindow.Location = new System.Drawing.Point(0, 0);
             this.panelTerminalWindow.Name = "panelTerminalWindow";
             this.panelTerminalWindow.Padding = new System.Windows.Forms.Padding(2);
-            this.panelTerminalWindow.Size = new System.Drawing.Size(382, 387);
+            this.panelTerminalWindow.Size = new System.Drawing.Size(382, 383);
             this.panelTerminalWindow.TabIndex = 3;
             // 
             // listBoxTerminal
@@ -482,10 +482,10 @@
             this.listBoxTerminal.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBoxTerminal.ForeColor = System.Drawing.Color.White;
             this.listBoxTerminal.FormattingEnabled = true;
-            this.listBoxTerminal.ItemHeight = 15;
+            this.listBoxTerminal.ItemHeight = 19;
             this.listBoxTerminal.Location = new System.Drawing.Point(2, 2);
             this.listBoxTerminal.Name = "listBoxTerminal";
-            this.listBoxTerminal.Size = new System.Drawing.Size(378, 383);
+            this.listBoxTerminal.Size = new System.Drawing.Size(378, 379);
             this.listBoxTerminal.TabIndex = 0;
             // 
             // panelCommandLine
@@ -494,7 +494,7 @@
             this.panelCommandLine.Controls.Add(this.commandLine);
             this.panelCommandLine.Controls.Add(this.panelCaret);
             this.panelCommandLine.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelCommandLine.Location = new System.Drawing.Point(0, 387);
+            this.panelCommandLine.Location = new System.Drawing.Point(0, 383);
             this.panelCommandLine.Name = "panelCommandLine";
             this.panelCommandLine.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelCommandLine.Size = new System.Drawing.Size(382, 26);
@@ -509,7 +509,7 @@
             this.commandLine.ForeColor = System.Drawing.Color.White;
             this.commandLine.Location = new System.Drawing.Point(18, 5);
             this.commandLine.Name = "commandLine";
-            this.commandLine.Size = new System.Drawing.Size(360, 16);
+            this.commandLine.Size = new System.Drawing.Size(360, 20);
             this.commandLine.TabIndex = 1;
             this.commandLine.WordWrap = false;
             // 
@@ -530,7 +530,7 @@
             this.labelCaret.ForeColor = System.Drawing.Color.White;
             this.labelCaret.Location = new System.Drawing.Point(0, 0);
             this.labelCaret.Name = "labelCaret";
-            this.labelCaret.Size = new System.Drawing.Size(14, 15);
+            this.labelCaret.Size = new System.Drawing.Size(18, 20);
             this.labelCaret.TabIndex = 0;
             this.labelCaret.Text = ">";
             // 
@@ -541,7 +541,7 @@
             this.labelTerminal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
             this.labelTerminal.Location = new System.Drawing.Point(4, 4);
             this.labelTerminal.Name = "labelTerminal";
-            this.labelTerminal.Size = new System.Drawing.Size(53, 16);
+            this.labelTerminal.Size = new System.Drawing.Size(68, 20);
             this.labelTerminal.TabIndex = 0;
             this.labelTerminal.Text = "Terminal";
             // 
@@ -550,10 +550,10 @@
             this.panelControlSliders.Controls.Add(this.panelControlButtons);
             this.panelControlSliders.Controls.Add(this.panelSliders);
             this.panelControlSliders.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControlSliders.Location = new System.Drawing.Point(4, 20);
+            this.panelControlSliders.Location = new System.Drawing.Point(4, 24);
             this.panelControlSliders.Name = "panelControlSliders";
             this.panelControlSliders.Padding = new System.Windows.Forms.Padding(4);
-            this.panelControlSliders.Size = new System.Drawing.Size(382, 268);
+            this.panelControlSliders.Size = new System.Drawing.Size(382, 264);
             this.panelControlSliders.TabIndex = 2;
             // 
             // panelControlButtons
@@ -573,7 +573,7 @@
             this.panelControlButtons.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControlButtons.Location = new System.Drawing.Point(4, 96);
             this.panelControlButtons.Name = "panelControlButtons";
-            this.panelControlButtons.Size = new System.Drawing.Size(374, 168);
+            this.panelControlButtons.Size = new System.Drawing.Size(374, 164);
             this.panelControlButtons.TabIndex = 1;
             // 
             // buttonLaserOff
@@ -595,7 +595,7 @@
             // 
             this.laserPower.Location = new System.Drawing.Point(274, 86);
             this.laserPower.Name = "laserPower";
-            this.laserPower.Size = new System.Drawing.Size(100, 22);
+            this.laserPower.Size = new System.Drawing.Size(100, 26);
             this.laserPower.TabIndex = 10;
             // 
             // buttonLaserOn
@@ -756,7 +756,7 @@
             this.sliderFeedrate.Location = new System.Drawing.Point(0, 0);
             this.sliderFeedrate.Maximum = 1000;
             this.sliderFeedrate.Name = "sliderFeedrate";
-            this.sliderFeedrate.Size = new System.Drawing.Size(374, 45);
+            this.sliderFeedrate.Size = new System.Drawing.Size(374, 56);
             this.sliderFeedrate.TabIndex = 1;
             this.sliderFeedrate.Tag = "Feedrate";
             this.sliderFeedrate.TickFrequency = 20;
@@ -764,10 +764,10 @@
             // sliderStep
             // 
             this.sliderStep.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sliderStep.Location = new System.Drawing.Point(0, 47);
+            this.sliderStep.Location = new System.Drawing.Point(0, 36);
             this.sliderStep.Maximum = 100;
             this.sliderStep.Name = "sliderStep";
-            this.sliderStep.Size = new System.Drawing.Size(374, 45);
+            this.sliderStep.Size = new System.Drawing.Size(374, 56);
             this.sliderStep.TabIndex = 0;
             this.sliderStep.Tag = "Step";
             this.sliderStep.TickFrequency = 5;
@@ -779,7 +779,7 @@
             this.labelControl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
             this.labelControl.Location = new System.Drawing.Point(4, 4);
             this.labelControl.Name = "labelControl";
-            this.labelControl.Size = new System.Drawing.Size(91, 16);
+            this.labelControl.Size = new System.Drawing.Size(116, 20);
             this.labelControl.TabIndex = 0;
             this.labelControl.Text = "Panel kontrolny";
             // 
@@ -807,7 +807,7 @@
             this.textStatusBox.Location = new System.Drawing.Point(909, 4);
             this.textStatusBox.Name = "textStatusBox";
             this.textStatusBox.ReadOnly = true;
-            this.textStatusBox.Size = new System.Drawing.Size(75, 15);
+            this.textStatusBox.Size = new System.Drawing.Size(75, 19);
             this.textStatusBox.TabIndex = 1;
             this.textStatusBox.Text = "STATUS";
             this.textStatusBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -822,7 +822,7 @@
             this.textStatus.Location = new System.Drawing.Point(8, 4);
             this.textStatus.Name = "textStatus";
             this.textStatus.ReadOnly = true;
-            this.textStatus.Size = new System.Drawing.Size(976, 15);
+            this.textStatus.Size = new System.Drawing.Size(976, 19);
             this.textStatus.TabIndex = 0;
             this.textStatus.Text = "STATUS_BAR_MESSAGE";
             // 
@@ -843,10 +843,11 @@
             this.panelForForms.Name = "panelForForms";
             this.panelForForms.Size = new System.Drawing.Size(988, 723);
             this.panelForForms.TabIndex = 2;
+            this.panelForForms.Paint += new System.Windows.Forms.PaintEventHandler(this.panelForForms_Paint);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1452, 745);

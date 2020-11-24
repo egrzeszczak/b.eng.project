@@ -29,6 +29,8 @@ namespace aogl1
         {
             // Zamknij
             this.Close();
+            
+            
         }
 
         private void goSimulate_Click(object sender, EventArgs e)
