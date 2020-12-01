@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace aogl1
 {
@@ -16,7 +15,7 @@ namespace aogl1
     {
         public enum LaserStatus { Connected, Disconnected }
         public enum StatusBoxStatus { Connected, Disconnected, ConnectionError }
-        
+
 
         // Global
         public LaserStatus laserStatus = LaserStatus.Disconnected;
@@ -28,8 +27,6 @@ namespace aogl1
             //Schowaj sideMenu + Schowaj wszystie podopcje w sideMenu
             sidePanelCollapse();
             sidePanelHideAll();
-            openChildForm(new WelcomeForm());
-
         }
 
         #region SideMenu
@@ -206,23 +203,6 @@ namespace aogl1
             sidePanelShowSubMenu(panelFile); 
         }
 
-
-        private Form activeForm = null;
-        private void openChildForm(Form childForm)
-        {
-            if (activeForm != null)
-                activeForm.Close();
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelForForms.Controls.Add(childForm);
-            panelForForms.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
-
         private void menuSettings_Click(object sender, EventArgs e)
         {
             // Rozwijaczka
@@ -245,50 +225,12 @@ namespace aogl1
         }
         private void goLoadFile_Click(object sender, EventArgs e)
         {
-            activeForm.Close();
             // Ładowanie pliku .svg, .jpg, .png
             OpenFileDialog openFile = new OpenFileDialog();
             openFile.Filter = "Obrazy JPG (.jpg)|*.jpg|Obrazy PNG (.png)|*.png|Obrazy wektorowe (.svg)|*.svg";
             openFile.FilterIndex = 1;
             openFile.ShowDialog();
 
-            var directory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            List<string> paths = File.ReadAllLines(Path.Combine(directory, "AOGL", "recentFiles.txt")).ToList();
-            System.IO.Directory.CreateDirectory(Path.Combine(directory, "AOGL"));
-
-
-            if (!System.IO.File.Exists(Path.Combine(directory, "AOGL", "recentFiles.txt")))
-            {
-                using (System.IO.FileStream fs = System.IO.File.Create(Path.Combine(directory, "AOGL", "recentFiles.txt")))
-                {
-                    for (byte i = 0; i < 100; i++)
-                    {
-                        fs.WriteByte(i);
-                    }
-                }
-            }
-            if ((openFile.FileName != null) && (paths.IndexOf(openFile.FileName)==-1))
-            {
-                while (paths.Count > 5)
-                {
-                    paths.RemoveAt(0);
-                }                
-                paths.Add(openFile.FileName);
-                File.WriteAllLines(Path.Combine(directory, "AOGL", "recentFiles.txt"), paths);
-            }
-
-
-
-
-
-
-
-            /*
-            using (FileStream fs = File.Create(Path.Combine(directory, "AOGL", "recentFiles.txt")))
-            {
-                AddText(fs, openFile.FileName);
-            }
-            */
             CanvasForm canvasForm = new CanvasForm()
             {
                 Dock = DockStyle.Fill,
@@ -301,7 +243,6 @@ namespace aogl1
             sidePanelHideAll();
             sidePanelCollapse();
         }
-    
 
         private void goLoadGCode_Click(object sender, EventArgs e)
         {
@@ -435,9 +376,6 @@ namespace aogl1
             laserStatus = LaserStatus.Disconnected;
         }
 
-        private void panelForForms_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
     }
 }
