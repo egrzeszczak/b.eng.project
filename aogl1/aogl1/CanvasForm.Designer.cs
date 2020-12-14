@@ -1,4 +1,4 @@
-﻿namespace aogl1
+﻿namespace AOGL
 {
     partial class CanvasForm
     {
@@ -28,159 +28,143 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelFilename = new System.Windows.Forms.Label();
-            this.panelCanvasPanel = new System.Windows.Forms.Panel();
-            this.panelMainButtons = new System.Windows.Forms.Panel();
-            this.goClose = new System.Windows.Forms.Button();
-            this.goSimulate = new System.Windows.Forms.Button();
-            this.goEngrave = new System.Windows.Forms.Button();
             this.panelPadding2 = new System.Windows.Forms.Panel();
             this.panelShowcase = new System.Windows.Forms.Panel();
-            this.panelCanvasPanel.SuspendLayout();
-            this.panelMainButtons.SuspendLayout();
+            this.goClose = new System.Windows.Forms.Button();
+            this.panelFooter = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.goGCode = new System.Windows.Forms.Button();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.panelPadding2.SuspendLayout();
+            this.panelFooter.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panelContainer.SuspendLayout();
+            this.panelMain.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // labelFilename
-            // 
-            this.labelFilename.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFilename.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelFilename.Location = new System.Drawing.Point(7, 9);
-            this.labelFilename.Name = "labelFilename";
-            this.labelFilename.Size = new System.Drawing.Size(466, 22);
-            this.labelFilename.TabIndex = 0;
-            this.labelFilename.Text = "random_image.png";
-            // 
-            // panelCanvasPanel
-            // 
-            this.panelCanvasPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.panelCanvasPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelCanvasPanel.Controls.Add(this.panelMainButtons);
-            this.panelCanvasPanel.Controls.Add(this.labelFilename);
-            this.panelCanvasPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelCanvasPanel.Location = new System.Drawing.Point(0, 613);
-            this.panelCanvasPanel.MaximumSize = new System.Drawing.Size(1500, 40);
-            this.panelCanvasPanel.Name = "panelCanvasPanel";
-            this.panelCanvasPanel.Padding = new System.Windows.Forms.Padding(4);
-            this.panelCanvasPanel.Size = new System.Drawing.Size(887, 40);
-            this.panelCanvasPanel.TabIndex = 2;
-            // 
-            // panelMainButtons
-            // 
-            this.panelMainButtons.Controls.Add(this.goClose);
-            this.panelMainButtons.Controls.Add(this.goSimulate);
-            this.panelMainButtons.Controls.Add(this.goEngrave);
-            this.panelMainButtons.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelMainButtons.Location = new System.Drawing.Point(479, 4);
-            this.panelMainButtons.Name = "panelMainButtons";
-            this.panelMainButtons.Size = new System.Drawing.Size(402, 30);
-            this.panelMainButtons.TabIndex = 2;
-            // 
-            // goClose
-            // 
-            this.goClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.goClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.goClose.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.goClose.FlatAppearance.BorderSize = 2;
-            this.goClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.goClose.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.goClose.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.goClose.Location = new System.Drawing.Point(2, 0);
-            this.goClose.Margin = new System.Windows.Forms.Padding(10);
-            this.goClose.Name = "goClose";
-            this.goClose.Size = new System.Drawing.Size(100, 30);
-            this.goClose.TabIndex = 4;
-            this.goClose.Text = "Zamknij";
-            this.goClose.UseVisualStyleBackColor = true;
-            this.goClose.Click += new System.EventHandler(this.goClose_Click);
-            // 
-            // goSimulate
-            // 
-            this.goSimulate.BackColor = System.Drawing.Color.ForestGreen;
-            this.goSimulate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.goSimulate.Dock = System.Windows.Forms.DockStyle.Right;
-            this.goSimulate.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.goSimulate.FlatAppearance.BorderSize = 2;
-            this.goSimulate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.goSimulate.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.goSimulate.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.goSimulate.Location = new System.Drawing.Point(102, 0);
-            this.goSimulate.Margin = new System.Windows.Forms.Padding(10);
-            this.goSimulate.Name = "goSimulate";
-            this.goSimulate.Size = new System.Drawing.Size(150, 30);
-            this.goSimulate.TabIndex = 3;
-            this.goSimulate.Text = "Symuluj";
-            this.goSimulate.UseVisualStyleBackColor = false;
-            this.goSimulate.Click += new System.EventHandler(this.goSimulate_Click);
-            // 
-            // goEngrave
-            // 
-            this.goEngrave.BackColor = System.Drawing.Color.DodgerBlue;
-            this.goEngrave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.goEngrave.Dock = System.Windows.Forms.DockStyle.Right;
-            this.goEngrave.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.goEngrave.FlatAppearance.BorderSize = 2;
-            this.goEngrave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.goEngrave.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.goEngrave.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.goEngrave.Location = new System.Drawing.Point(252, 0);
-            this.goEngrave.Margin = new System.Windows.Forms.Padding(10);
-            this.goEngrave.Name = "goEngrave";
-            this.goEngrave.Size = new System.Drawing.Size(150, 30);
-            this.goEngrave.TabIndex = 2;
-            this.goEngrave.Text = "Graweruj";
-            this.goEngrave.UseVisualStyleBackColor = false;
-            this.goEngrave.Click += new System.EventHandler(this.goEngrave_Click);
             // 
             // panelPadding2
             // 
-            this.panelPadding2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.panelPadding2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.panelPadding2.Controls.Add(this.panelShowcase);
             this.panelPadding2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPadding2.Location = new System.Drawing.Point(0, 0);
             this.panelPadding2.Name = "panelPadding2";
-            this.panelPadding2.Padding = new System.Windows.Forms.Padding(8);
-            this.panelPadding2.Size = new System.Drawing.Size(887, 613);
+            this.panelPadding2.Size = new System.Drawing.Size(817, 453);
             this.panelPadding2.TabIndex = 3;
             // 
             // panelShowcase
             // 
-            this.panelShowcase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panelShowcase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(70)))), ((int)(((byte)(124)))));
+            this.panelShowcase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelShowcase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelShowcase.Location = new System.Drawing.Point(8, 8);
+            this.panelShowcase.Location = new System.Drawing.Point(0, 0);
             this.panelShowcase.Name = "panelShowcase";
             this.panelShowcase.Padding = new System.Windows.Forms.Padding(10);
-            this.panelShowcase.Size = new System.Drawing.Size(871, 597);
+            this.panelShowcase.Size = new System.Drawing.Size(817, 453);
             this.panelShowcase.TabIndex = 4;
+            // 
+            // goClose
+            // 
+            this.goClose.Dock = System.Windows.Forms.DockStyle.Left;
+            this.goClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.goClose.FlatAppearance.BorderSize = 0;
+            this.goClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.goClose.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.goClose.ForeColor = System.Drawing.Color.White;
+            this.goClose.Location = new System.Drawing.Point(0, 0);
+            this.goClose.Name = "goClose";
+            this.goClose.Size = new System.Drawing.Size(71, 24);
+            this.goClose.TabIndex = 6;
+            this.goClose.Text = "Zamknij";
+            this.goClose.UseVisualStyleBackColor = true;
+            this.goClose.Click += new System.EventHandler(this.goClose_Click);
+            // 
+            // panelFooter
+            // 
+            this.panelFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.panelFooter.Controls.Add(this.panel1);
+            this.panelFooter.Controls.Add(this.goClose);
+            this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelFooter.Location = new System.Drawing.Point(0, 453);
+            this.panelFooter.Name = "panelFooter";
+            this.panelFooter.Size = new System.Drawing.Size(817, 24);
+            this.panelFooter.TabIndex = 5;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.panel1.Controls.Add(this.goGCode);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(71, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(746, 24);
+            this.panel1.TabIndex = 7;
+            // 
+            // goGCode
+            // 
+            this.goGCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(43)))), ((int)(((byte)(51)))));
+            this.goGCode.Dock = System.Windows.Forms.DockStyle.Right;
+            this.goGCode.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.goGCode.FlatAppearance.BorderSize = 0;
+            this.goGCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.goGCode.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.goGCode.ForeColor = System.Drawing.Color.White;
+            this.goGCode.Location = new System.Drawing.Point(675, 0);
+            this.goGCode.Name = "goGCode";
+            this.goGCode.Size = new System.Drawing.Size(71, 24);
+            this.goGCode.TabIndex = 6;
+            this.goGCode.Text = "GCode";
+            this.goGCode.UseVisualStyleBackColor = false;
+            this.goGCode.Click += new System.EventHandler(this.goGCode_Click);
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.Controls.Add(this.panelMain);
+            this.panelContainer.Controls.Add(this.panelFooter);
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(0, 0);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(817, 477);
+            this.panelContainer.TabIndex = 6;
+            // 
+            // panelMain
+            // 
+            this.panelMain.Controls.Add(this.panelPadding2);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 0);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(817, 453);
+            this.panelMain.TabIndex = 6;
             // 
             // CanvasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(887, 653);
-            this.Controls.Add(this.panelPadding2);
-            this.Controls.Add(this.panelCanvasPanel);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.ClientSize = new System.Drawing.Size(817, 477);
+            this.Controls.Add(this.panelContainer);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CanvasForm";
             this.Text = "CanvasForm";
-            this.panelCanvasPanel.ResumeLayout(false);
-            this.panelMainButtons.ResumeLayout(false);
             this.panelPadding2.ResumeLayout(false);
+            this.panelFooter.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panelContainer.ResumeLayout(false);
+            this.panelMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelFilename;
-        private System.Windows.Forms.Panel panelCanvasPanel;
-        private System.Windows.Forms.Panel panelMainButtons;
-        private System.Windows.Forms.Button goClose;
-        private System.Windows.Forms.Button goSimulate;
-        private System.Windows.Forms.Button goEngrave;
         private System.Windows.Forms.Panel panelPadding2;
         private System.Windows.Forms.Panel panelShowcase;
+        private System.Windows.Forms.Panel panelFooter;
+        private System.Windows.Forms.Panel panelContainer;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.Button goClose;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button goGCode;
     }
 }

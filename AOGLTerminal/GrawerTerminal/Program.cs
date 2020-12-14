@@ -101,6 +101,7 @@ namespace GrawerTerminal
             else
             {
                 Console.WriteLine("[sterownik] brak\t");
+                
                 return;
             }
 

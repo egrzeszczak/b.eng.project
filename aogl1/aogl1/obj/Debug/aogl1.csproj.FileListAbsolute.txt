@@ -30,3 +30,5 @@ C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.pdb
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.MainForm.resources
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.CanvasForm.resources
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.CanvasPicture.resources
+C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.GCodeForm.resources
+C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\aogl1.EngravingForm.resources

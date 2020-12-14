@@ -8,16 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace aogl1
+namespace AOGL
 {
     public partial class CanvasPicture : Form
     {
         private Point MouseDownLocation;
 
-        public CanvasPicture()
+        public CanvasPicture(string fileName)
         {
             InitializeComponent();
 
+            pictureBox.Image = new Bitmap(fileName);
             pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox.Anchor = AnchorStyles.None;
             pictureBox.Location = new Point((pictureBox.Parent.ClientSize.Width / 2) - (pictureBox.Width / 2),

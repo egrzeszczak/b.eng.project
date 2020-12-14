@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3C254274-62E6-42FF-BA34-755CFDC0AF95}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>aogl1</RootNamespace>
-    <AssemblyName>aogl1</AssemblyName>
+    <RootNamespace>AOGL</RootNamespace>
+    <AssemblyName>AOGL</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ConsoleControl, Version=1.3.0.0, Culture=neutral, PublicKeyToken=7edd23586f5e297f, processorArchitecture=MSIL">
@@ -53,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitmapToGCode.cs" />
     <Compile Include="CanvasPicture.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +69,31 @@
     <Compile Include="CanvasForm.Designer.cs">
       <DependentUpon>CanvasForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EngravingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngravingForm.Designer.cs">
+      <DependentUpon>EngravingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GCodeCreator.cs" />
+    <Compile Include="GCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GCodeForm.Designer.cs">
+      <DependentUpon>GCodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRBLConfigEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRBLConfigEditForm.Designer.cs">
+      <DependentUpon>GRBLConfigEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRBLConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRBLConfigurationForm.Designer.cs">
+      <DependentUpon>GRBLConfigurationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,11 +103,42 @@
     <Compile Include="PortFinder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VectorToGCode.cs" />
+    <Compile Include="WarningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarningForm.Designer.cs">
+      <DependentUpon>WarningForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CanvasForm.resx">
       <DependentUpon>CanvasForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CanvasPicture.resx">
       <DependentUpon>CanvasPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngravingForm.resx">
+      <DependentUpon>EngravingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCodeForm.resx">
+      <DependentUpon>GCodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRBLConfigEditForm.resx">
+      <DependentUpon>GRBLConfigEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRBLConfigurationForm.resx">
+      <DependentUpon>GRBLConfigurationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -92,7 +151,17 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarningForm.resx">
+      <DependentUpon>WarningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -109,6 +178,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Console.ico" />
+    <None Include="Resources\test.nc" />
+    <None Include="Resources\test.png" />
+    <None Include="Resources\test32x32.png" />
+    <None Include="Resources\politechnika-lubelska.svg" />
+    <None Include="Resources\panda_gcode.nc" />
+    <None Include="Resources\pepe.jpg" />
+    <None Include="Resources\pepe.nc" />
+    <None Include="Resources\pepe32x32.png" />
+    <None Include="Resources\panda.png" />
+    <None Include="Resources\panda32x32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

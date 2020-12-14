@@ -1,0 +1,7 @@
+C:\Users\lenovo\Desktop\AOGL\AOGLTerminal\GrawerTerminal\bin\Debug\GrawerTerminal.exe.config
+C:\Users\lenovo\Desktop\AOGL\AOGLTerminal\GrawerTerminal\bin\Debug\GrawerTerminal.exe
+C:\Users\lenovo\Desktop\AOGL\AOGLTerminal\GrawerTerminal\bin\Debug\GrawerTerminal.pdb
+C:\Users\lenovo\Desktop\AOGL\AOGLTerminal\GrawerTerminal\obj\Debug\GrawerTerminal.csprojAssemblyReference.cache
+C:\Users\lenovo\Desktop\AOGL\AOGLTerminal\GrawerTerminal\obj\Debug\GrawerTerminal.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\AOGL\AOGLTerminal\GrawerTerminal\obj\Debug\GrawerTerminal.exe
+C:\Users\lenovo\Desktop\AOGL\AOGLTerminal\GrawerTerminal\obj\Debug\GrawerTerminal.pdb
