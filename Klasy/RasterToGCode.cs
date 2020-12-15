@@ -32,7 +32,7 @@ namespace GCodeFromImage
             try
             {
                 XDocument svgFile = XDocument.Load(@"C:\\Users\\Bohdan\\Desktop\\praca\\method-draw-image.svg");
-                bmp = new Bitmap("C:\\Users\\Bohdan\\Desktop\\praca\\heart.png"); //path to image
+                bmp = new Bitmap("C:\\Users\\Bohdan\\Desktop\\praca\\pepe.jpg"); //path to image
                 String file = @"C:\\Users\\Bohdan\\Desktop\\praca\\test1.gcode"; //path to new gcode file
 
 
@@ -42,6 +42,9 @@ namespace GCodeFromImage
 
                 //image to grayscale
                 Bitmap d = new Bitmap(bmp.Width, bmp.Height);
+
+                writer.WriteLine(bmp.Height);
+                writer.WriteLine(bmp.Width);
 
                 for (int i = 0; i < bmp.Width; i++)
                 {
@@ -61,9 +64,8 @@ namespace GCodeFromImage
 
                 // 1-horizontal
                 // 2-vertical
-                // 3-diagonal
-                // 4-only black
-                expression = 4;
+                // 3-only black
+                expression = 3;
                 switch(expression)
                 {
                     case 1:
@@ -73,9 +75,6 @@ namespace GCodeFromImage
                         vertical(writer, d);
                         break;
                     case 3:
-                        diagonal(writer, bmp);
-                        break;
-                    case 4:
                         only_black(writer, d);
                         break;
                     default:
@@ -90,11 +89,16 @@ namespace GCodeFromImage
             {
 
             }
+
         }
 
         static void horizontal(StreamWriter writer, Bitmap bmp)
         {
-            for(int y = 0; y < bmp.Height; y++)
+            bool first = true;
+            bool start_line = true;
+            start(writer);
+
+            for(int y = bmp.Height - 1; y >= 0; y--)
             {
                 //startline
                 for(int x = 0; x < bmp.Width; x++)
@@ -104,68 +108,172 @@ namespace GCodeFromImage
                     float col = colour / 3;
                     double coefficient = Math.Round(col, MidpointRounding.AwayFromZero);
                     double power = Math.Round(min_power + (255 - coefficient) * power_inc, 2);
+                    if (first)
+                    {
+                        writer.WriteLine("G01 X" + x * one_pix + " Y" + (bmp.Height - y - 1) * one_pix + " F200");
+                        writer.WriteLine("G4 P0");
+                        writer.WriteLine("M03 S" + power);
+                        writer.WriteLine("G4 P0");
+                        writer.WriteLine("G1 F750.000000");
+                        first = false;
+                        continue;
+                    }
 
-                    //writer.WriteLine(power);
-                    writer.WriteLine("M03 S" + power);
-                    writer.WriteLine("G01 X" + x * one_pix + " Y" + y * one_pix + " F200");
+                    if (start_line)
+                    {
+                        writer.WriteLine("G01 X" + x * one_pix + " Y" + (bmp.Height - y - 1) * one_pix + " F200");
+                        writer.WriteLine("M03 S" + power);
+                        start_line = false;
+                    }
+                    else
+                    {
+                        writer.WriteLine("M03 S" + power);
+                        writer.WriteLine("G01 X" + x * one_pix + " Y" + (bmp.Height - y - 1) * one_pix + " F200");
+                    }
 
                 }
+
+                writer.WriteLine("M03 S0");
+                start_line = true;
                 //endline
             }
+
+            end(writer);
         }
 
         static void vertical(StreamWriter writer, Bitmap bmp)
         {
+            bool first = true;
+            bool start_line = true;
+            start(writer);
+
             for (int x = 0; x < bmp.Width; x++)
             {
                 //startline
-                for (int y = 0; y < bmp.Height; y++)
+                for (int y = bmp.Height - 1; y >= 0; y--)
                 {
                     Color color = bmp.GetPixel(x, y);
                     float colour = (color.R + color.G + color.B);
                     float col = colour / 3;
                     double coefficient = Math.Round(col, MidpointRounding.AwayFromZero);
                     double power = Math.Round(min_power + (255 - coefficient) * power_inc, 2);
+                    if (first)
+                    {
+                        writer.WriteLine("G01 X" + x * one_pix + " Y" + (bmp.Height - y - 1) * one_pix + " F200");
+                        writer.WriteLine("G4 P0");
+                        writer.WriteLine("M03 S" + power);
+                        writer.WriteLine("G4 P0");
+                        writer.WriteLine("G1 F750.000000");
+                        first = false;
+                        continue;
+                    }
 
-                    //writer.WriteLine(power);
-                    writer.WriteLine("M03 S" + power);
-                    writer.WriteLine("G01 X" + x * one_pix + " Y" + y * one_pix + " F200");
+                    if (start_line)
+                    {
+                        writer.WriteLine("G01 X" + x * one_pix + " Y" + (bmp.Height - y - 1) * one_pix + " F200");
+                        writer.WriteLine("M03 S" + power);
+                        start_line = false;
+                    }
+                    else
+                    {
+                        writer.WriteLine("M03 S" + power);
+                        writer.WriteLine("G01 X" + x * one_pix + " Y" + (bmp.Height - y - 1) * one_pix + " F200");
+                    }
 
                 }
+
+                writer.WriteLine("M03 S0");
+                start_line = true;
                 //endline
             }
+
+            end(writer);
         }
 
-        static void diagonal(StreamWriter writer, Bitmap bmp)
-        {
 
-        }
 
         static void only_black(StreamWriter writer, Bitmap bmp)
-        {   
+        {
+            bool first = true;
+            bool first_white = true;
+            bool first_black = true;
+            bool start_line = false;
+            bool white = false;
             //startfile
-            for(int y = 0; y<bmp.Height; y++)
+            start(writer);
+            for(int y = bmp.Height - 1; y >= 0; y--)
             {
                 //startline
                 for(int x = 0; x<bmp.Width; x++)
                 {
                     Color color = bmp.GetPixel(x, y);
-                    if(Convert.ToInt32(color.R) < 240) 
+                    if(Convert.ToInt32(color.R) < 40) 
                     {
-                        writer.WriteLine("G01" + " X" + x + " Y" + (bmp.Height - y) + " F200");
+                        if (first)
+                        {
+                            writer.WriteLine("G01 X" + x * one_pix + " Y" + (bmp.Height - y - 1) * one_pix + " F200");
+                            writer.WriteLine("G4 P0");
+                            writer.WriteLine("M03 S255");
+                            writer.WriteLine("G4 P0");
+                            writer.WriteLine("G1 F750.000000");
+                            first = false;
+                            first_black = false;
+                            continue;
+                        }
+                        else
+                        {
+                            if (first_black)
+                            {
+                                writer.WriteLine("M03 S255");
+                                first_black = false;
+                                first_white = true;
+                                writer.WriteLine("G01 X" + x * one_pix + " Y" + (bmp.Height - y - 1) * one_pix + " F200");
+                            }
+                            else
+                            {
+                                if (start_line)
+                                {
+                                    writer.WriteLine("G01 X" + x * one_pix + " Y" + (bmp.Height - y - 1) * one_pix + " F200");
+                                    writer.WriteLine("M03 S255");
+                                    start_line = false;
+                                }
+                                else
+                                {
+                                    writer.WriteLine("G01 X" + x * one_pix + " Y" + (bmp.Height - y - 1) * one_pix + " F200");
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (first_white && !first)
+                        {
+                            writer.WriteLine("M03 S0");
+                            
+                            first_white = false;
+                            first_black = true;
+                            white = true;
+                        }
                     }
                 }
+                if (white)
+                {
+
+                }
+                else
+                {
+                    writer.WriteLine("M03 S0");
+                }
+                start_line = true;
                 //endline
             }
+            end(writer);
             //endfile
         }
 
-        static void only_white(StreamWriter writer, Bitmap bmp)
-        {
 
-        }
 
-        static void vector(StreamWriter writer, Bitmap bmp)
+        /*static void vector(StreamWriter writer, Bitmap bmp)
         {
             Boolean first_black_pixel_in_column = true;
             List<string> upper_pixels = new List<string>();
@@ -205,7 +313,7 @@ namespace GCodeFromImage
                 writer.WriteLine(lower_pixels[i]);
             }
             writer.WriteLine(first_pixel_coordinates);
-        }
+        }*/
 
         static private void start(StreamWriter writer)
         {
