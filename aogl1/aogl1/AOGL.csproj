@@ -41,6 +41,9 @@
     <Reference Include="ConsoleControlAPI, Version=1.3.0.0, Culture=neutral, PublicKeyToken=7c86b8a36b9c33e2, processorArchitecture=MSIL">
       <HintPath>..\packages\ConsoleControlAPI.1.3.0\lib\net40\ConsoleControlAPI.dll</HintPath>
     </Reference>
+    <Reference Include="NReco.ImageGenerator, Version=1.2.0.0, Culture=neutral, PublicKeyToken=0ef6c878974c90ac, processorArchitecture=MSIL">
+      <HintPath>..\packages\NReco.ImageGenerator.1.2.0\lib\net45\NReco.ImageGenerator.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
@@ -75,7 +78,12 @@
     <Compile Include="EngravingForm.Designer.cs">
       <DependentUpon>EngravingForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GCodeCreator.cs" />
+    <Compile Include="RasterOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RasterOptions.Designer.cs">
+      <DependentUpon>RasterOptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="GCodeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +111,7 @@
     <Compile Include="PortFinder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RasterToGCode.cs" />
     <Compile Include="TestForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +162,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RasterOptions.resx">
+      <DependentUpon>RasterOptions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -12,12 +12,15 @@ namespace AOGL
 {
     public partial class MainForm : Form
     {
+        public WelcomeForm welcomeForm;
+
         public MainForm()
         {
             InitializeComponent();
         }
 
         #region SideMenu
+
         //================================================================================================================================================ Side Menu
 
         /*  Funkcje obsługi bocznego panelu menu
@@ -59,6 +62,7 @@ namespace AOGL
             panelSettings.Visible = false;
             panelLaser.Visible = false;
         }
+
         private void sidePanelHideSubMenu()
         {
             // Select dla wybranej opcji
@@ -95,12 +99,14 @@ namespace AOGL
         }
 
         //================================================================================================================================================ Side Menu
+
         #endregion SideMenu
 
         #region DriverManager
+
         //================================================================================================================================================ Driver Manager
 
-        /* 
+        /*
          * Funkcje odpowiedzialne za wychwytywanie sterownika z systemu
          * i instalowanie sterownika w przypadku jego braku
          */
@@ -160,16 +166,19 @@ namespace AOGL
         }
 
         //================================================================================================================================================ Driver Manager
+
         #endregion DriverManager
 
         #region StatusBar
+
         //================================================================================================================================================ Status/Footer
 
-        /* 
+        /*
          * Funkcje odpowiedzialne za wyświetlanie statusu w dolnym panelu
          */
 
-        public enum StatusBoxStatus { 
+        public enum StatusBoxStatus
+        {
             Connected,          // Polaczono
             Disconnected,       // Rozlaczono
             ConnectionError,    // Blad przy polaczeniu
@@ -225,6 +234,7 @@ namespace AOGL
         #endregion StatusBar
 
         #region Buttons
+
         //================================================================================================================================================ Przyciski
 
         private void buttonDOWN_Click(object sender, EventArgs e)
@@ -311,7 +321,53 @@ namespace AOGL
             Application.Exit(); // Wyjdź z aplikacji
         }
 
-        private void goLoadFile_Click(object sender, EventArgs e)
+        public void addFileToWelcome(string path)
+        {
+            ListViewItem listViewItem = new ListViewItem(
+                    new string[] {
+                        Path.GetFileNameWithoutExtension(path),
+                        path
+                    }
+                );
+            welcomeForm.listViewLatest.Items.Add(listViewItem);
+
+            List<string> paths = new List<string>();
+            foreach (ListViewItem element in welcomeForm.listViewLatest.Items)
+            {
+                paths.Add(element.SubItems[1].Text);
+            }
+            paths = paths.Distinct().ToList();
+
+            StreamWriter sw = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\last.aogl", false);
+            foreach (string line in paths)
+            {
+                sw.WriteLine(line);
+            }
+            sw.Close();
+        }
+
+        public void loadFilesToWelcome()
+        {
+            StreamReader sr = new StreamReader(
+                    Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\last.aogl"
+                );
+
+            string line = "";
+            while ((line = sr.ReadLine()) != null)
+            {
+                welcomeForm.listViewLatest.Items.Add(
+                    new ListViewItem(
+                            new string[]
+                            {
+                                Path.GetFileNameWithoutExtension(line),
+                                line
+                            }
+                        )
+                    );
+            }
+        }
+
+        public void goLoadFile_Click(object sender, EventArgs e)
         {
             // Ładowanie pliku .svg, .jpg, .png
             OpenFileDialog openFile = new OpenFileDialog();
@@ -323,6 +379,8 @@ namespace AOGL
             //Czy wczytany jakis obraz?
             if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
+                addFileToWelcome(openFile.FileName);
+
                 //Wybrano jakis obraz
                 Debug.WriteLine("Obraz wybrany");
                 //Nowa zakladka
@@ -349,7 +407,7 @@ namespace AOGL
             sidePanelCollapse();
         }
 
-        private void goLoadGCode_Click(object sender, EventArgs e)
+        public void goLoadGCode_Click(object sender, EventArgs e)
         {
             // Ładowanie pliku .nc, .gcode, .txt
             OpenFileDialog openFile = new OpenFileDialog();
@@ -361,6 +419,8 @@ namespace AOGL
             //Czy wczytana jakas instrukcja?
             if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
+                addFileToWelcome(openFile.FileName);
+
                 TabPage loadGcodeTab = new TabPage(Path.GetFileNameWithoutExtension(openFile.FileName) + " (GCode)");
 
                 GCodeForm codeForm = new GCodeForm(serialPort, tabControl, openFile.FileName)
@@ -393,11 +453,11 @@ namespace AOGL
             testForm.ShowDialog();
 
             // Jesli wybrano jakis element
-            if(testForm.objectReference is null)
+            if (testForm.objectReference is null)
             {
                 // Wcisnieto przycisk Close w TestForm
                 Debug.WriteLine("Nie wybrano nic.");
-            } 
+            }
             else
             {
                 // Wybrano jakis obiekt
@@ -410,10 +470,10 @@ namespace AOGL
                 {
                     // Obiekt to System.Byte[] czyli lancuch znakow
                     // Konwertuj `Byte[]` do `string`
-                    string objectSelectedToString = System.Text.Encoding.Default.GetString( (Byte[]) objectSelected);
+                    string objectSelectedToString = System.Text.Encoding.Default.GetString((Byte[])objectSelected);
                     // Konwertuj `string` do `List<string>`
                     List<string> objectSelectedToGCode = objectSelectedToString.Split(new char[] { '\n' }).ToList();
-                    // Zamknij otwarty serialPort 
+                    // Zamknij otwarty serialPort
                     CloseSerialPort();
                     // Wylacz kontrole panelu na MainForm
                     setControlPanelDisabled();
@@ -462,6 +522,7 @@ namespace AOGL
             sendCommand("$$");
             listBoxTerminal.Items.Add("[GRBL Config Start]");
         }
+
         private void goTerminalPosition_Click(object sender, EventArgs e)
         {
             sendCommand("?");
@@ -483,6 +544,7 @@ namespace AOGL
             // Rozwijaczka
             sidePanelShowSubMenu(panelLaser);
         }
+
         private void menuSettings_Click(object sender, EventArgs e)
         {
             // Rozwijaczka
@@ -509,9 +571,11 @@ namespace AOGL
         }
 
         //================================================================================================================================================ Przyciski
+
         #endregion Buttons
 
         #region Control
+
         //================================================================================================================================================ Dostep uzytkownika
 
         /* Kontrola dostepu przy laczeniu sie z laserem
@@ -519,6 +583,7 @@ namespace AOGL
 
         // Zmienne
         public int __laserPowerValue = 200;
+
         public int __sliderFeedrateValue = 0;
         public int __sliderStepValue = 0;
         private int __sliderFeedrateRate = 100;
@@ -604,6 +669,7 @@ namespace AOGL
 
             goTest.Enabled = true;
         }
+
         //================================================================================================================================================ Dostep uzytkownika
 
         #endregion Control
@@ -612,7 +678,9 @@ namespace AOGL
 
         /* Backend laczenia sie z laserem
          */
+
         public enum LaserStatus { Connected, Disconnected }
+
         public LaserStatus laserStatus = LaserStatus.Disconnected;
 
         public void SetLaserConnected(string portNameFound)
@@ -724,14 +792,16 @@ namespace AOGL
             }
             // Rozlacz z laserem ------------------------------------------------------------------------------------------------------------------------ ROZLACZ
         }
+
         //================================================================================================================================================ Lacznosc
 
         #endregion Connect-Disconnect
 
         #region SerialPort
+
         //================================================================================================================================================ SerialPort
 
-        /* 
+        /*
          * Ustawienia serial port dla terminala
          */
 
@@ -834,7 +904,6 @@ namespace AOGL
         private void si_DataReceived(string data)
         {
             Debug.WriteLine("\tresponse-> " + data.Trim());
-            logger.Add(data.Trim());
             // Odbierz dane i wyswietl w terminalu
             listBoxTerminal.Items.Add(data.Trim());
 
@@ -862,6 +931,7 @@ namespace AOGL
                 MessageBoxIcon.Warning
             );
         }
+
         //================================================================================================================================================ SerialPort
 
         #endregion SerialPort
@@ -872,7 +942,6 @@ namespace AOGL
         /*
          * Wysylanie polecen to mikrokontrolera na Enter
          */
-        public List<string> logger;
 
         private void commandLine_KeyDown(object sender, KeyEventArgs e)
         {
@@ -907,6 +976,7 @@ namespace AOGL
                 "G90"
                 );
         }
+
         public void sendCommand(string command)
         {
             Debug.WriteLine("sendCommand():\n\t-> command: " + command);
@@ -930,12 +1000,10 @@ namespace AOGL
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            logger = new List<string>();
-
             //Schowaj sideMenu + Schowaj wszystie podopcje w sideMenu
             sidePanelHide();
 
-            listBoxTerminal.Items.Add("AOGL 0.1.6v");
+            listBoxTerminal.Items.Add("AOGL 1.0");
 
             // Sprawdź stan sterownika
             checkDriverInstalled();
@@ -943,7 +1011,7 @@ namespace AOGL
             // Laser disconnected
             laserStatus = LaserStatus.Disconnected;
             SetLaserDisconnected();
-            setStatusBarMessage(DateTime.Now + " Witamy w aplikacji obsługi grawera laserowego. DEVELOPMENT");
+            setStatusBarMessage(DateTime.Now + " Witamy w aplikacji obsługi grawera laserowego.");
 
             __laserPowerValue = (int)laserPower.Value;
             __sliderFeedrateValue = (int)sliderFeedrate.Value * __sliderFeedrateRate;
@@ -951,9 +1019,7 @@ namespace AOGL
             labelSliderFeedRateValue.Text = (sliderFeedrate.Value * __sliderFeedrateRate).ToString();
             labelSliderStepValue.Text = (sliderStep.Value * __sliderStepRate).ToString();
 
-
-
-            WelcomeForm welcomeForm = new WelcomeForm(this)
+            welcomeForm = new WelcomeForm(this)
             {
                 Dock = DockStyle.Fill,
                 TopLevel = false,
@@ -961,6 +1027,18 @@ namespace AOGL
             };
             tabControl.TabPages[0].Controls.Add(welcomeForm);
             welcomeForm.Show();
+
+            // Load Latest Files
+            if (File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\last.aogl"))
+            {
+                Debug.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\last.aogl");
+                loadFilesToWelcome();
+            }
+            else
+            {
+                Debug.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\last.aogl doesnt exist");
+                File.Create(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\last.aogl");
+            }
         }
 
         private void goGrbl_Click(object sender, EventArgs e)

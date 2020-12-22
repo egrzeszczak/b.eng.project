@@ -22,35 +22,7 @@ namespace AOGL
 
         private void goOpenFile_Click(object sender, EventArgs e)
         {
-            // Ładowanie pliku .svg, .jpg, .png
-            OpenFileDialog openFile = new OpenFileDialog();
-            //Filtry dla OPF
-            openFile.Filter = "Obrazy JPG (.jpg)|*.jpg|Obrazy PNG (.png)|*.png|Obrazy wektorowe (.svg)|*.svg|All files (*.*)|*.*";
-            //Pokazuj najpierw obrazy JPG
-            openFile.FilterIndex = 1;
-
-            //Czy wczytany jakis obraz?
-            if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                //Nowa zakladka
-                TabPage loadFileTab = new TabPage(Path.GetFileNameWithoutExtension(openFile.FileName) + $" (Obraz {Path.GetExtension(openFile.FileName)})");
-                //Ustawienia dla CanvasForm
-                CanvasForm canvasForm = new CanvasForm(mainForm.serialPort, openFile.FileName, mainForm.tabControl)
-                {
-                    Dock = DockStyle.Fill,
-                    TopLevel = false,
-                    TopMost = true,
-                };
-                //Dodaj do nowej zakladki canvasForm
-                loadFileTab.Controls.Add(canvasForm);
-                //Dodaj nowa zakladke do TabControl
-                mainForm.tabControl.Controls.Add(loadFileTab);
-                //Wybierz ta zakladke
-                mainForm.tabControl.SelectedTab = loadFileTab;
-                //Pokaz
-                canvasForm.Show();
-            }
-            else { }
+            mainForm.goLoadFile_Click(sender, e);
         }
 
         private void goGRBLConfig_Click(object sender, EventArgs e)
@@ -75,7 +47,15 @@ namespace AOGL
 
         private void goTest_Click(object sender, EventArgs e)
         {
-            mainForm.goTest_Click(sender, e);
+            if(mainForm.laserStatus == MainForm.LaserStatus.Connected)
+            {
+                mainForm.goTest_Click(sender, e);
+            }
+        }
+
+        private void goLoadGCode_Click(object sender, EventArgs e)
+        {
+            mainForm.goLoadGCode_Click(sender, e);
         }
     }
 }

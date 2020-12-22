@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.goSave = new System.Windows.Forms.Button();
+            this.goLoad = new System.Windows.Forms.Button();
+            this.goWriteConfig = new System.Windows.Forms.Button();
             this.goFetchConfig = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listOptions = new System.Windows.Forms.ListView();
@@ -36,15 +39,14 @@
             this.columnName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnValue = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.goWriteConfig = new System.Windows.Forms.Button();
-            this.goLoad = new System.Windows.Forms.Button();
-            this.goSave = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelContainer.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelContainer
             // 
+            this.panelContainer.Controls.Add(this.button1);
             this.panelContainer.Controls.Add(this.goSave);
             this.panelContainer.Controls.Add(this.goLoad);
             this.panelContainer.Controls.Add(this.goWriteConfig);
@@ -57,14 +59,55 @@
             this.panelContainer.Size = new System.Drawing.Size(676, 570);
             this.panelContainer.TabIndex = 0;
             // 
+            // goSave
+            // 
+            this.goSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.goSave.FlatAppearance.BorderSize = 0;
+            this.goSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.goSave.ForeColor = System.Drawing.Color.White;
+            this.goSave.Location = new System.Drawing.Point(406, 535);
+            this.goSave.Name = "goSave";
+            this.goSave.Size = new System.Drawing.Size(93, 23);
+            this.goSave.TabIndex = 5;
+            this.goSave.Text = "Zapisz";
+            this.goSave.UseVisualStyleBackColor = false;
+            this.goSave.Click += new System.EventHandler(this.goSave_Click);
+            // 
+            // goLoad
+            // 
+            this.goLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.goLoad.FlatAppearance.BorderSize = 0;
+            this.goLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.goLoad.ForeColor = System.Drawing.Color.White;
+            this.goLoad.Location = new System.Drawing.Point(307, 535);
+            this.goLoad.Name = "goLoad";
+            this.goLoad.Size = new System.Drawing.Size(93, 23);
+            this.goLoad.TabIndex = 4;
+            this.goLoad.Text = "Wczytaj";
+            this.goLoad.UseVisualStyleBackColor = false;
+            this.goLoad.Click += new System.EventHandler(this.goLoad_Click);
+            // 
+            // goWriteConfig
+            // 
+            this.goWriteConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.goWriteConfig.FlatAppearance.BorderSize = 0;
+            this.goWriteConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.goWriteConfig.ForeColor = System.Drawing.Color.White;
+            this.goWriteConfig.Location = new System.Drawing.Point(208, 535);
+            this.goWriteConfig.Name = "goWriteConfig";
+            this.goWriteConfig.Size = new System.Drawing.Size(93, 23);
+            this.goWriteConfig.TabIndex = 3;
+            this.goWriteConfig.Text = "Wgraj";
+            this.goWriteConfig.UseVisualStyleBackColor = false;
+            this.goWriteConfig.Click += new System.EventHandler(this.goWriteConfig_Click);
+            // 
             // goFetchConfig
             // 
             this.goFetchConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.goFetchConfig.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.goFetchConfig.FlatAppearance.BorderSize = 2;
+            this.goFetchConfig.FlatAppearance.BorderSize = 0;
             this.goFetchConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goFetchConfig.ForeColor = System.Drawing.Color.White;
-            this.goFetchConfig.Location = new System.Drawing.Point(10, 535);
+            this.goFetchConfig.Location = new System.Drawing.Point(109, 535);
             this.goFetchConfig.Name = "goFetchConfig";
             this.goFetchConfig.Size = new System.Drawing.Size(93, 23);
             this.goFetchConfig.TabIndex = 2;
@@ -121,50 +164,19 @@
             // 
             this.columnValue.Text = "Wartosc";
             // 
-            // goWriteConfig
+            // button1
             // 
-            this.goWriteConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.goWriteConfig.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.goWriteConfig.FlatAppearance.BorderSize = 2;
-            this.goWriteConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.goWriteConfig.ForeColor = System.Drawing.Color.White;
-            this.goWriteConfig.Location = new System.Drawing.Point(109, 535);
-            this.goWriteConfig.Name = "goWriteConfig";
-            this.goWriteConfig.Size = new System.Drawing.Size(93, 23);
-            this.goWriteConfig.TabIndex = 3;
-            this.goWriteConfig.Text = "Wgraj";
-            this.goWriteConfig.UseVisualStyleBackColor = false;
-            this.goWriteConfig.Click += new System.EventHandler(this.goWriteConfig_Click);
-            // 
-            // goLoad
-            // 
-            this.goLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.goLoad.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.goLoad.FlatAppearance.BorderSize = 2;
-            this.goLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.goLoad.ForeColor = System.Drawing.Color.White;
-            this.goLoad.Location = new System.Drawing.Point(208, 535);
-            this.goLoad.Name = "goLoad";
-            this.goLoad.Size = new System.Drawing.Size(93, 23);
-            this.goLoad.TabIndex = 4;
-            this.goLoad.Text = "Wczytaj";
-            this.goLoad.UseVisualStyleBackColor = false;
-            this.goLoad.Click += new System.EventHandler(this.goLoad_Click);
-            // 
-            // goSave
-            // 
-            this.goSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.goSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.goSave.FlatAppearance.BorderSize = 2;
-            this.goSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.goSave.ForeColor = System.Drawing.Color.White;
-            this.goSave.Location = new System.Drawing.Point(307, 535);
-            this.goSave.Name = "goSave";
-            this.goSave.Size = new System.Drawing.Size(93, 23);
-            this.goSave.TabIndex = 5;
-            this.goSave.Text = "Zapisz";
-            this.goSave.UseVisualStyleBackColor = false;
-            this.goSave.Click += new System.EventHandler(this.goSave_Click);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(10, 535);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Zamknij";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // GRBLConfigurationForm
             // 
@@ -196,5 +208,6 @@
         private System.Windows.Forms.Button goWriteConfig;
         private System.Windows.Forms.Button goSave;
         private System.Windows.Forms.Button goLoad;
+        private System.Windows.Forms.Button button1;
     }
 }

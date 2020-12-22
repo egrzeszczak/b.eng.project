@@ -133,7 +133,7 @@
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(32, 1061);
+            this.panelSideMenu.Size = new System.Drawing.Size(32, 754);
             this.panelSideMenu.TabIndex = 0;
             // 
             // menuLeave
@@ -145,7 +145,7 @@
             this.menuLeave.ForeColor = System.Drawing.Color.White;
             this.menuLeave.Image = ((System.Drawing.Image)(resources.GetObject("menuLeave.Image")));
             this.menuLeave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menuLeave.Location = new System.Drawing.Point(0, 999);
+            this.menuLeave.Location = new System.Drawing.Point(0, 692);
             this.menuLeave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.menuLeave.Name = "menuLeave";
             this.menuLeave.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -423,12 +423,12 @@
             this.panelControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.panelControl.Controls.Add(this.splitControl);
             this.panelControl.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl.Location = new System.Drawing.Point(1524, 0);
+            this.panelControl.Location = new System.Drawing.Point(937, 0);
             this.panelControl.MaximumSize = new System.Drawing.Size(400, 0);
             this.panelControl.MinimumSize = new System.Drawing.Size(400, 0);
             this.panelControl.Name = "panelControl";
             this.panelControl.Padding = new System.Windows.Forms.Padding(4);
-            this.panelControl.Size = new System.Drawing.Size(400, 1061);
+            this.panelControl.Size = new System.Drawing.Size(400, 754);
             this.panelControl.TabIndex = 1;
             // 
             // splitControl
@@ -451,8 +451,8 @@
             this.splitControl.Panel2.Controls.Add(this.panelControlSliders);
             this.splitControl.Panel2.Controls.Add(this.labelControl);
             this.splitControl.Panel2.Padding = new System.Windows.Forms.Padding(4);
-            this.splitControl.Size = new System.Drawing.Size(392, 1053);
-            this.splitControl.SplitterDistance = 618;
+            this.splitControl.Size = new System.Drawing.Size(392, 746);
+            this.splitControl.SplitterDistance = 437;
             this.splitControl.SplitterWidth = 8;
             this.splitControl.TabIndex = 0;
             // 
@@ -463,7 +463,7 @@
             this.panelTerminal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTerminal.Location = new System.Drawing.Point(4, 20);
             this.panelTerminal.Name = "panelTerminal";
-            this.panelTerminal.Size = new System.Drawing.Size(384, 594);
+            this.panelTerminal.Size = new System.Drawing.Size(384, 413);
             this.panelTerminal.TabIndex = 1;
             // 
             // panelTerminalWindow
@@ -474,7 +474,7 @@
             this.panelTerminalWindow.Location = new System.Drawing.Point(0, 0);
             this.panelTerminalWindow.Name = "panelTerminalWindow";
             this.panelTerminalWindow.Padding = new System.Windows.Forms.Padding(2);
-            this.panelTerminalWindow.Size = new System.Drawing.Size(384, 568);
+            this.panelTerminalWindow.Size = new System.Drawing.Size(384, 387);
             this.panelTerminalWindow.TabIndex = 3;
             // 
             // listBoxTerminal
@@ -488,7 +488,7 @@
             this.listBoxTerminal.ItemHeight = 15;
             this.listBoxTerminal.Location = new System.Drawing.Point(2, 2);
             this.listBoxTerminal.Name = "listBoxTerminal";
-            this.listBoxTerminal.Size = new System.Drawing.Size(380, 564);
+            this.listBoxTerminal.Size = new System.Drawing.Size(380, 383);
             this.listBoxTerminal.TabIndex = 0;
             // 
             // panelCommandLine
@@ -501,7 +501,7 @@
             this.panelCommandLine.Controls.Add(this.commandLine);
             this.panelCommandLine.Controls.Add(this.panelCaret);
             this.panelCommandLine.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelCommandLine.Location = new System.Drawing.Point(0, 568);
+            this.panelCommandLine.Location = new System.Drawing.Point(0, 387);
             this.panelCommandLine.Name = "panelCommandLine";
             this.panelCommandLine.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelCommandLine.Size = new System.Drawing.Size(384, 26);
@@ -633,7 +633,7 @@
             this.panelControlSliders.Location = new System.Drawing.Point(4, 20);
             this.panelControlSliders.Name = "panelControlSliders";
             this.panelControlSliders.Padding = new System.Windows.Forms.Padding(4);
-            this.panelControlSliders.Size = new System.Drawing.Size(384, 403);
+            this.panelControlSliders.Size = new System.Drawing.Size(384, 277);
             this.panelControlSliders.TabIndex = 2;
             // 
             // panelControlButtons
@@ -651,7 +651,7 @@
             this.panelControlButtons.Controls.Add(this.buttonUP);
             this.panelControlButtons.Controls.Add(this.buttonUPLEFT);
             this.panelControlButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControlButtons.Location = new System.Drawing.Point(4, 230);
+            this.panelControlButtons.Location = new System.Drawing.Point(4, 104);
             this.panelControlButtons.Name = "panelControlButtons";
             this.panelControlButtons.Size = new System.Drawing.Size(376, 169);
             this.panelControlButtons.TabIndex = 1;
@@ -969,11 +969,11 @@
             this.panelStatus.Controls.Add(this.panel1);
             this.panelStatus.Controls.Add(this.panelStatusBoxPadding);
             this.panelStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelStatus.Location = new System.Drawing.Point(0, 1041);
+            this.panelStatus.Location = new System.Drawing.Point(0, 734);
             this.panelStatus.MaximumSize = new System.Drawing.Size(0, 20);
             this.panelStatus.MinimumSize = new System.Drawing.Size(0, 20);
             this.panelStatus.Name = "panelStatus";
-            this.panelStatus.Size = new System.Drawing.Size(1492, 20);
+            this.panelStatus.Size = new System.Drawing.Size(905, 20);
             this.panelStatus.TabIndex = 1;
             // 
             // panel1
@@ -984,7 +984,7 @@
             this.panel1.Location = new System.Drawing.Point(90, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(6, 2, 2, 2);
-            this.panel1.Size = new System.Drawing.Size(1402, 20);
+            this.panel1.Size = new System.Drawing.Size(815, 20);
             this.panel1.TabIndex = 1;
             // 
             // textStatus
@@ -997,7 +997,7 @@
             this.textStatus.Location = new System.Drawing.Point(6, 2);
             this.textStatus.Name = "textStatus";
             this.textStatus.ReadOnly = true;
-            this.textStatus.Size = new System.Drawing.Size(1394, 15);
+            this.textStatus.Size = new System.Drawing.Size(807, 15);
             this.textStatus.TabIndex = 0;
             this.textStatus.Text = "STATUS_BAR_MESSAGE";
             // 
@@ -1035,7 +1035,7 @@
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(32, 0);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1492, 1061);
+            this.panelMain.Size = new System.Drawing.Size(905, 754);
             this.panelMain.TabIndex = 2;
             // 
             // panelForForms
@@ -1046,7 +1046,7 @@
             this.panelForForms.Location = new System.Drawing.Point(0, 0);
             this.panelForForms.Margin = new System.Windows.Forms.Padding(0);
             this.panelForForms.Name = "panelForForms";
-            this.panelForForms.Size = new System.Drawing.Size(1492, 1041);
+            this.panelForForms.Size = new System.Drawing.Size(905, 734);
             this.panelForForms.TabIndex = 2;
             // 
             // tabControl
@@ -1056,7 +1056,7 @@
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(1492, 1041);
+            this.tabControl.Size = new System.Drawing.Size(905, 734);
             this.tabControl.TabIndex = 0;
             // 
             // tabPage1
@@ -1065,7 +1065,7 @@
             this.tabPage1.ForeColor = System.Drawing.Color.White;
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1484, 1012);
+            this.tabPage1.Size = new System.Drawing.Size(897, 705);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Start";
             // 
@@ -1074,7 +1074,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1924, 1061);
+            this.ClientSize = new System.Drawing.Size(1337, 754);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelControl);
             this.Controls.Add(this.panelSideMenu);

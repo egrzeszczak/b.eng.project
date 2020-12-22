@@ -208,8 +208,11 @@ namespace AOGL
             {
                 if(item.ForeColor == Color.FromArgb(0, 195, 165))
                 {
-                    mainForm.sendCommand($"${item.SubItems[0].Text}={item.SubItems[3].Text}\n\r");
-                    item.ForeColor = Color.White;
+                    if (mainForm.serialPort.IsOpen)
+                    {
+                        mainForm.sendCommand($"${item.SubItems[0].Text}={item.SubItems[3].Text}\n\r");
+                        item.ForeColor = Color.White;
+                    }
                 }
             }
         }
@@ -259,6 +262,12 @@ namespace AOGL
                     }
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            mainForm.tabControl.TabPages.Remove(mainForm.tabControl.SelectedTab);
+            this.Close();
         }
     }
 }

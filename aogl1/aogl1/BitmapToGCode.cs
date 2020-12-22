@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-
 
 namespace AOGL
 {
-    class GCodeGenerator
+    internal class GCodeGenerator
     {
         private readonly double _Width;
         private readonly double _Height;
@@ -16,35 +12,33 @@ namespace AOGL
         private readonly double _PointStep = 0.1;
         private readonly double _Freezone;
         private readonly double _Feed;
-        private readonly bool _EngraveBothDirection;
 
-        private const int MAX_Intencity = 80;
+        private const int MAX_Intencity = 400;
 
-        public GCodeGenerator(double width, double height, double lineStep, double freezone, double feed, bool engraveBothDirection)
+        public GCodeGenerator(double width, double height, double lineStep, double freezone, double feed)
         {
             _Width = width;
             _Height = height;
             _LineStep = lineStep;
             _Freezone = freezone;
             _Feed = feed;
-            _EngraveBothDirection = engraveBothDirection;
         }
-        const string feedMove = "G1 X{0:0.###} S{1:0.###}";
-        //const string engraveMove = "G1 X{0:0.###} S{1:0.###}";
-        //const string freeMove = "G1 X{0:0.###} M5";
-        const string fastMove = "G0 X{0:0.###} Y{1:0.###} S{2:0.###}";
+
+        private const string feedMove = "G1 X{0:0.###} M3 S{1:0.###}";
+        private const string fastMove = "G0 X{0:0.###} Y{1:0.###} M3 S{2:0.###}";
+
         public IEnumerable<string> Generate(Bitmap image)
         {
             NumberFormatInfo nfi = new NumberFormatInfo();
             nfi.NumberDecimalSeparator = ".";
 
-            int iWidth = image.Width;   //Ширина изображения
-            int iHeight = image.Height; //Высота изображения
-            double pixelWidth = _Width / iWidth;    //Ширина пикселя
+            int iWidth = image.Width;
+            int iHeight = image.Height;
+            double pixelWidth = _Width / iWidth;
             if (pixelWidth < _PointStep)
                 pixelWidth = _PointStep;
 
-            int xPixelSteps = 1;    //Шаг выборки пикселей из изображения
+            int xPixelSteps = 1;
             if (pixelWidth < _LineStep)
                 xPixelSteps = (int)(_LineStep / pixelWidth);
 
@@ -53,14 +47,14 @@ namespace AOGL
 
             List<string> gCode = new List<string>();
             gCode.Add(string.Format(nfi, "F{0:0.###}", _Feed));
-            for (int y = 0; y < linesCount; y++)    //Шагаем по строкам
+            for (int y = 0; y < linesCount; y++)
             {
-                int yPixelCursor = (int)(y / linesPerPixel);    //Вычисляем положение в картинке
+                int yPixelCursor = (int)(y / linesPerPixel);
 
-                int lastLaserState = 0;     //Сбрасываем яркость лазера на последнем шаге
-                double lastX = 0.0;         //Последнее положение
+                int lastLaserState = 0;
+                double lastX = 0.0;
 
-                int firstDarkX = -1;        //Поиск первого темного пикселя
+                int firstDarkX = -1;
                 for (int x = 0; x < iWidth; x++)
                 {
                     if (image.GetPixel(x, yPixelCursor).GetBrightness() < 1.0)
@@ -70,34 +64,29 @@ namespace AOGL
                     }
                 }
                 if (firstDarkX == -1)
-                    continue;   //Пропускаем строки если они белые
+                    continue;
 
-
-                //Холостой ход в начало строки с темными пикселями
                 gCode.Add(string.Format(nfi, fastMove, firstDarkX * pixelWidth - _Freezone, -y * _LineStep, 0.0));
 
-                //Подъезжаем на рабочей скорости к первой темной точке
-                //gCode.Add(string.Format(nfi, feedMove, firstDarkX * pixelWidth, 0));
-
                 float brightnessSum = 0;
-                //Перебор пикселей в строке
+
                 for (int x = firstDarkX; x < iWidth; x++)
                 {
                     if (x % xPixelSteps != 0)
                     {
-                        brightnessSum += image.GetPixel(x, yPixelCursor).GetBrightness();   //суммируем яркости пикселей, между шагами головки
+                        brightnessSum += image.GetPixel(x, yPixelCursor).GetBrightness();
                         continue;
                     }
 
-                    brightnessSum += image.GetPixel(x, yPixelCursor).GetBrightness(); //прибавляем текущий пиксель
+                    brightnessSum += image.GetPixel(x, yPixelCursor).GetBrightness();
 
-                    int curLaserState = (int)(MAX_Intencity * (1.0 - brightnessSum / (double)xPixelSteps)); //вычисляем среднюю яркость
-                    brightnessSum = 0;  //Обнуляем яркость
+                    int curLaserState = (int)(MAX_Intencity * (1.0 - brightnessSum / (double)xPixelSteps));
+                    brightnessSum = 0;
 
-                    if (lastLaserState == curLaserState) //не добавляем команд если строки не закрашены
+                    if (lastLaserState == curLaserState)
                         continue;
 
-                    lastX = x * pixelWidth; //координата точки с изменением цвета
+                    lastX = x * pixelWidth;
 
                     gCode.Add(string.Format(nfi, feedMove, lastX, lastLaserState));
 
@@ -107,12 +96,11 @@ namespace AOGL
                 if (lastLaserState > 0.0)
                 {
                     lastX = _Width;
-                    gCode.Add(string.Format(nfi, feedMove, _Width, lastLaserState)); //Завершаем строку и выключаем лазер
+                    gCode.Add(string.Format(nfi, feedMove, _Width, lastLaserState));
                 }
 
                 if (_Freezone > 0.0)
-                    gCode.Add(string.Format(nfi, feedMove, lastX + _Freezone, 0)); //Холостой ход для торможения
-
+                    gCode.Add(string.Format(nfi, feedMove, lastX + _Freezone, 0));
             }
             return gCode;
         }

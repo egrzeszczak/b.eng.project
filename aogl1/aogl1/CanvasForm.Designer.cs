@@ -56,7 +56,6 @@
             // panelShowcase
             // 
             this.panelShowcase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(70)))), ((int)(((byte)(124)))));
-            this.panelShowcase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelShowcase.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelShowcase.Location = new System.Drawing.Point(0, 0);
             this.panelShowcase.Name = "panelShowcase";

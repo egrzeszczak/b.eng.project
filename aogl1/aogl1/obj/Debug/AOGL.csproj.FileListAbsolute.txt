@@ -22,3 +22,6 @@ C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\AOGL.WarningForm.resources
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\AOGL.GRBLConfigurationForm.resources
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\AOGL.GRBLConfigEditForm.resources
 C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\AOGL.WelcomeForm.resources
+C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\bin\Debug\NReco.ImageGenerator.dll
+C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\bin\Debug\NReco.ImageGenerator.xml
+C:\Users\lenovo\Desktop\AOGL\aogl1\aogl1\obj\Debug\AOGL.RasterOptions.resources

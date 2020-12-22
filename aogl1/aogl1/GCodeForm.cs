@@ -199,7 +199,15 @@ namespace AOGL
             EngravingForm engravingForm = new EngravingForm(
                 __fileName, __gcode
             );
-            engravingForm.ShowDialog();
+            try
+            {
+                engravingForm.ShowDialog();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

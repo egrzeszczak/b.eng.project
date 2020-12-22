@@ -34,6 +34,7 @@
             this.goGRBLConfig = new System.Windows.Forms.Button();
             this.goTest = new System.Windows.Forms.Button();
             this.goConnect = new System.Windows.Forms.Button();
+            this.goLoadGCode = new System.Windows.Forms.Button();
             this.goOpenFile = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -82,21 +83,23 @@
             this.panel4.Controls.Add(this.goGRBLConfig);
             this.panel4.Controls.Add(this.goTest);
             this.panel4.Controls.Add(this.goConnect);
+            this.panel4.Controls.Add(this.goLoadGCode);
             this.panel4.Controls.Add(this.goOpenFile);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 224);
+            this.panel4.Location = new System.Drawing.Point(0, 257);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(630, 138);
+            this.panel4.Size = new System.Drawing.Size(630, 188);
             this.panel4.TabIndex = 4;
             // 
             // goGRBLConfig
             // 
+            this.goGRBLConfig.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goGRBLConfig.Dock = System.Windows.Forms.DockStyle.Top;
             this.goGRBLConfig.FlatAppearance.BorderSize = 0;
             this.goGRBLConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goGRBLConfig.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goGRBLConfig.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.goGRBLConfig.Location = new System.Drawing.Point(0, 93);
+            this.goGRBLConfig.Location = new System.Drawing.Point(0, 124);
             this.goGRBLConfig.Name = "goGRBLConfig";
             this.goGRBLConfig.Size = new System.Drawing.Size(630, 31);
             this.goGRBLConfig.TabIndex = 3;
@@ -107,12 +110,13 @@
             // 
             // goTest
             // 
+            this.goTest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goTest.Dock = System.Windows.Forms.DockStyle.Top;
             this.goTest.FlatAppearance.BorderSize = 0;
             this.goTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goTest.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goTest.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.goTest.Location = new System.Drawing.Point(0, 62);
+            this.goTest.Location = new System.Drawing.Point(0, 93);
             this.goTest.Name = "goTest";
             this.goTest.Size = new System.Drawing.Size(630, 31);
             this.goTest.TabIndex = 2;
@@ -123,22 +127,41 @@
             // 
             // goConnect
             // 
+            this.goConnect.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goConnect.Dock = System.Windows.Forms.DockStyle.Top;
             this.goConnect.FlatAppearance.BorderSize = 0;
             this.goConnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goConnect.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goConnect.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.goConnect.Location = new System.Drawing.Point(0, 31);
+            this.goConnect.Location = new System.Drawing.Point(0, 62);
             this.goConnect.Name = "goConnect";
             this.goConnect.Size = new System.Drawing.Size(630, 31);
-            this.goConnect.TabIndex = 1;
-            this.goConnect.Text = "Polacz z urzadzeniem";
+            this.goConnect.TabIndex = 4;
+            this.goConnect.Text = "Polacz / Rozlacz";
             this.goConnect.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.goConnect.UseVisualStyleBackColor = true;
             this.goConnect.Click += new System.EventHandler(this.goConnect_Click);
             // 
+            // goLoadGCode
+            // 
+            this.goLoadGCode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.goLoadGCode.Dock = System.Windows.Forms.DockStyle.Top;
+            this.goLoadGCode.FlatAppearance.BorderSize = 0;
+            this.goLoadGCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.goLoadGCode.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.goLoadGCode.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.goLoadGCode.Location = new System.Drawing.Point(0, 31);
+            this.goLoadGCode.Name = "goLoadGCode";
+            this.goLoadGCode.Size = new System.Drawing.Size(630, 31);
+            this.goLoadGCode.TabIndex = 1;
+            this.goLoadGCode.Text = "Otworz GCode";
+            this.goLoadGCode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.goLoadGCode.UseVisualStyleBackColor = true;
+            this.goLoadGCode.Click += new System.EventHandler(this.goLoadGCode_Click);
+            // 
             // goOpenFile
             // 
+            this.goOpenFile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goOpenFile.Dock = System.Windows.Forms.DockStyle.Top;
             this.goOpenFile.FlatAppearance.BorderSize = 0;
             this.goOpenFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -157,9 +180,10 @@
             // 
             this.panel3.Controls.Add(this.label3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 195);
+            this.panel3.Location = new System.Drawing.Point(0, 209);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(630, 29);
+            this.panel3.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            this.panel3.Size = new System.Drawing.Size(630, 48);
             this.panel3.TabIndex = 3;
             // 
             // label3
@@ -167,7 +191,7 @@
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Left;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Location = new System.Drawing.Point(0, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 25);
             this.label3.TabIndex = 0;
@@ -177,7 +201,7 @@
             // 
             this.panel2.Controls.Add(this.listViewLatest);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 95);
+            this.panel2.Location = new System.Drawing.Point(0, 109);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(630, 100);
             this.panel2.TabIndex = 2;
@@ -191,7 +215,7 @@
             this.columnPath});
             this.listViewLatest.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewLatest.ForeColor = System.Drawing.Color.White;
-            this.listViewLatest.HideSelection = false;
+            this.listViewLatest.FullRowSelect = true;
             this.listViewLatest.Location = new System.Drawing.Point(0, 0);
             this.listViewLatest.Name = "listViewLatest";
             this.listViewLatest.Size = new System.Drawing.Size(630, 100);
@@ -201,11 +225,13 @@
             // 
             // columnName
             // 
+            this.columnName.Text = "Plik";
             this.columnName.Width = 134;
             // 
             // columnPath
             // 
-            this.columnPath.Width = 405;
+            this.columnPath.Text = "Sciezka";
+            this.columnPath.Width = 400;
             // 
             // panel1
             // 
@@ -213,7 +239,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 66);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(630, 29);
+            this.panel1.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            this.panel1.Size = new System.Drawing.Size(630, 43);
             this.panel1.TabIndex = 1;
             // 
             // label2
@@ -221,7 +248,7 @@
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Location = new System.Drawing.Point(0, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 25);
             this.label2.TabIndex = 0;
@@ -239,9 +266,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Location = new System.Drawing.Point(-11, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 62);
             this.label1.TabIndex = 0;
@@ -285,12 +311,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ListView listViewLatest;
         private System.Windows.Forms.ColumnHeader columnName;
         private System.Windows.Forms.ColumnHeader columnPath;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button goLoadGCode;
+        public System.Windows.Forms.ListView listViewLatest;
     }
 }

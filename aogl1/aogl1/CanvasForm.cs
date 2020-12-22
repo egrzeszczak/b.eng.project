@@ -34,7 +34,7 @@ namespace AOGL
             __fileName = fileName;
 
             //Wczytaj podglad obrazu
-            CanvasPicture canvasPicture = new CanvasPicture(fileName)
+            CanvasPicture canvasPicture = new CanvasPicture(fileName, new Size(this.Width, this.Height))
             {
                 TopLevel = false,
                 TopMost = true
@@ -54,47 +54,62 @@ namespace AOGL
 
         private void goGCode_Click(object sender, EventArgs e)
         {
-            /*
-             * 
-             * Work in progress <-------------------------------------------------------------------------------
-             * 
-             */
-            GCodeCreator codeCreator = new GCodeCreator(
-                    __fileName,
-                    GCodeCreator.EngravingDirection.Horizontal,
-                    1500,
-                    0,
-                    400
-                );
-            //GCodeGenerator codeCreator = new GCodeGenerator(
-            //        100,
-            //        100,
-            //        1,
-            //        1,
-            //        1500,
-            //        true
-            //    );
-            List<string> gcode = codeCreator.toGCode();
-            //gcode.ForEach(delegate (String line)
-            //{
-            //    Debug.WriteLine(line);
-            //});
-            TabPage loadGcodeTab = new TabPage(Path.GetFileNameWithoutExtension(__fileName) + " (Converted to GCode)");
-
-            GCodeForm codeForm = new GCodeForm(__serialPort, __ownerTab, __fileName, gcode)
+            if(Path.GetExtension(__fileName) == ".svg")
             {
-                Dock = DockStyle.Fill,
-                TopLevel = false,
-                TopMost = true
-            };
-            //Dodaj do nowej zakladki canvasForm
-            loadGcodeTab.Controls.Add(codeForm);
-            //Dodaj nowa zakladke do TabControl
-            __ownerTab.Controls.Add(loadGcodeTab);
-            //Wybierz ta zakladke
-            __ownerTab.SelectedTab = loadGcodeTab;
-            //Pokaz
-            codeForm.Show();
+                GCodeFromImage.VectorToGcode codeCreator = new GCodeFromImage.VectorToGcode(__fileName);
+                List<string> gcode = codeCreator.FinalGCode;
+
+                TabPage loadGcodeTab = new TabPage(Path.GetFileNameWithoutExtension(__fileName) + " (Converted to GCode)");
+
+                GCodeForm codeForm = new GCodeForm(__serialPort, __ownerTab, __fileName, gcode)
+                {
+                    Dock = DockStyle.Fill,
+                    TopLevel = false,
+                    TopMost = true
+                };
+                //Dodaj do nowej zakladki canvasForm
+                loadGcodeTab.Controls.Add(codeForm);
+                //Dodaj nowa zakladke do TabControl
+                __ownerTab.Controls.Add(loadGcodeTab);
+                //Wybierz ta zakladke
+                __ownerTab.SelectedTab = loadGcodeTab;
+                //Pokaz
+                codeForm.Show();
+            } 
+            else
+            {
+                RasterOptions rasterOptions = new RasterOptions(Path.GetFileName(__fileName));
+                rasterOptions.ShowDialog();
+
+                if (rasterOptions.Status)
+                {
+                    GCodeFromImage.RasterToGCode codeCreator = new GCodeFromImage.RasterToGCode(
+                        rasterOptions.Feedrate,
+                        rasterOptions.MinPower,
+                        rasterOptions.MaxPower,
+                        new Bitmap(__fileName),
+                        GCodeFromImage.RasterToGCode.ParseStyle(rasterOptions.Style)
+                    );
+                    List<string> gcode = codeCreator.FinalGCode;
+
+                    TabPage loadGcodeTab = new TabPage(Path.GetFileNameWithoutExtension(__fileName) + " (Converted to GCode)");
+
+                    GCodeForm codeForm = new GCodeForm(__serialPort, __ownerTab, __fileName, gcode)
+                    {
+                        Dock = DockStyle.Fill,
+                        TopLevel = false,
+                        TopMost = true
+                    };
+                    //Dodaj do nowej zakladki canvasForm
+                    loadGcodeTab.Controls.Add(codeForm);
+                    //Dodaj nowa zakladke do TabControl
+                    __ownerTab.Controls.Add(loadGcodeTab);
+                    //Wybierz ta zakladke
+                    __ownerTab.SelectedTab = loadGcodeTab;
+                    //Pokaz
+                    codeForm.Show();
+                }
+            }
         }
     }
 }
