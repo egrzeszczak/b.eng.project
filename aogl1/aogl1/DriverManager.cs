@@ -5,7 +5,7 @@ using System.Management;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace aogl1
+namespace AOGL
 {
     class DriverManager
     {

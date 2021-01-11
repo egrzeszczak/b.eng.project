@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aogl1", "aogl1\aogl1.csproj", "{3C254274-62E6-42FF-BA34-755CFDC0AF95}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AOGL", "aogl1\AOGL.csproj", "{3C254274-62E6-42FF-BA34-755CFDC0AF95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

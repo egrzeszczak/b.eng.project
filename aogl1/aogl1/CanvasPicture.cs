@@ -3,26 +3,41 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace aogl1
+namespace AOGL
 {
     public partial class CanvasPicture : Form
     {
         private Point MouseDownLocation;
 
-        public CanvasPicture()
+        private NReco.ImageGenerator.HtmlToImageConverter svgImage = new NReco.ImageGenerator.HtmlToImageConverter();
+
+        public enum ImageType { Raster, Vector }
+        private ImageType imageType;
+        public CanvasPicture(string fileName, Size parentSize)
         {
             InitializeComponent();
 
-            pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox.Anchor = AnchorStyles.None;
-            pictureBox.Location = new Point((pictureBox.Parent.ClientSize.Width / 2) - (pictureBox.Width / 2),
-                              (pictureBox.Parent.ClientSize.Height / 2) - (pictureBox.Height / 2));
-            pictureBox.Refresh();
+            this.Size = parentSize;
+            if (fileName.EndsWith(".svg"))
+            {
+                imageType = ImageType.Vector;
+                var imageByte = svgImage.GenerateImageFromFile(fileName, "png");
+                var stream = new System.IO.MemoryStream(imageByte, 0, imageByte.Length);
+                pictureBox.Image = new Bitmap(Image.FromStream(stream));
+            } 
+            else
+            {
+                imageType = ImageType.Raster;
+                pictureBox.Image = new Bitmap(fileName);
+            }
+            this.Location = new Point(0, 0);
+            this.Refresh();
         }
 
         private void pictureBox_MouseMove(object sender, MouseEventArgs e)
@@ -40,6 +55,11 @@ namespace aogl1
             {
                 MouseDownLocation = e.Location;
             }
+        }
+
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

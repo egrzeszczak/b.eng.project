@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace aogl1
+namespace AOGL
 {
     class PortFinder
     {
@@ -65,12 +65,10 @@ namespace aogl1
                     return PortFinderStatus.PortNotFound;
                 }
             }
-            catch (ManagementException e)
+            catch
             {
                 return PortFinderStatus.ManagementSearcherError;
             }
-            return PortFinderStatus.PortFound;
-
         }
     }
 }
