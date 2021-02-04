@@ -3,18 +3,9 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-
-
-
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/egrzeszczak/AOGL">
-    <img src="Resources/politechnika-lubelska.svg" alt="Logo" width="256" height="256">
-  </a>
-
-  <h3 align="center">Praca dyplomowa inżynierska</h3>
-  <h3 align="center"><b><u>WORK IN PROGRESS</u></b></h3>
+  <h3 align="center">Engineering thesis project</h3>
 
   <p align="center">
     Aplikacja obsługująca grawer laserowy
@@ -25,91 +16,8 @@
   </p>
 </p>
 
-
-
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
-
-
-* [Documentation](#documentation)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
-
-<!-- GETTING STARTED -->
-## Documentation
-
-* [Project design](PROJEKT.pdf)
-
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
-**This project uses .NET 4.8 Framework**
-
-### Installation
-
-1. Clone the repo
-```sh
-git clone https://github.com/egrzeszczak/AOGL.git
-```
-2. Open solution in Visual Studio 2019
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-![](Resources/preview1.jpg)
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/egrzeszczak/AOGL/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Bohdan
-Michał 
-Ernest 
-
-Project Link: [https://github.com/egrzeszczak/AOGL](https://github.com/egrzeszczak/AOGL)
+___
+[Project design](PROJEKT.pdf)
 
 
 
